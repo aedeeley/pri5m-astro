@@ -1,0 +1,44 @@
+{
+  "name": "@aedeeley/pri5m.com-astro",
+  "version": "0.11",
+  "description": "ASTRO / TAILWIND / RADIX UI / SHADCN",
+  "author": {
+    "name": "PRI5M"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev",
+    "format": "prettier -w . --cache",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.0.6",
+    "@astrojs/tailwind": "^5.0.2",
+    "@material-tailwind/react": "^2.1.7",
+    "@radix-ui/react-slot": "^1.0.2",
+    "astro": "^4.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.33.0",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss": "^3.3.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-animated": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17",
+    "daisyui": "^4.4.20",
+    "prettier": "^3.1.0",
+    "prettier-plugin-astro": "^0.12.2",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "typescript": "^5.3.2"
+  },
+  "packageManager": "pnpm@8.12.1"
+}

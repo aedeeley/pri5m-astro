@@ -1,0 +1,39 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { buttonVariants } from '@/components/ui/button'
+import { Image } from 'astro:assets'
+import logo from '../assets/logo.svg'
+---
+
+<BaseLayout
+  title="PRI5M Process"
+  description="Modern development for forward thinking individuals"
+>
+  <section class="gap-6pb-40 md:py-100 container grid items-center pt-10">
+    <div class="mx-auto max-w-screen-xl px-5">
+      <div class="mt-16 text-center">
+        <div class="mb-4">
+          <span
+            class="rounded-full border border-purple-200 bg-purple-100 px-3 py-1 text-xs font-medium text-purple-600"
+            >ABOUT US</span>
+        </div><h1 class="text-4xl font-bold lg:text-5xl lg:tracking-tight">
+          We're Building Future
+        </h1><p class="mx-auto mt-4 max-w-xl text-lg text-slate-500">
+          We're a multi-cultural team from around the world! We come from
+          diverse backgrounds, bringing different personalities, experiences and
+          skills to the job. This is what makes our team so special..
+        </p>
+      </div><div class="mt-6 text-center">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener"
+          class="focus-visible:shadow-outline-indigo rounded-full border-2 border-indigo-500 bg-white px-4 py-2 text-center text-sm text-indigo-600 transition hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
+        >
+          Learn more →
+        </a>
+      </div>
+    </div>
+  </section>
+  
+</BaseLayout>
