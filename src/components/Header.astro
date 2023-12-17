@@ -18,7 +18,7 @@ const currentPath = pathname.slice(1);
     >
       <ul id="nav" class="flex list-none gap-4 md:gap-8">
         <li>
-          <a href="/" class="flex items-center space-x-2 hover:animate-wiggle-more active:opacity-80">
+          <a href="/" class="flex items-center space-x-2 active:opacity-80">
             <span class="inline-block"
               ><Image
                 src={logo}
@@ -26,7 +26,17 @@ const currentPath = pathname.slice(1);
                 id="site-logo"
                 class="float-left max-w-[32px] max-[600px]:max-w-[24px]"
               /></span
-            >
+            ><div class={currentPath === "" ? "active" : ""}>Prism</div>
+          </a>
+        </li>
+        <li
+          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 dark:hover:text-zinc-300 active:opacity-80"
+        >
+          <a
+            href="services"
+            class={currentPath === "services" ? "active" : ""}
+          >
+            <span class="inline-block">Services</span>
           </a>
         </li>
         <li
@@ -47,16 +57,6 @@ const currentPath = pathname.slice(1);
             class={currentPath === "showcase" ? "active" : ""}
           >
             <span class="inline-block">Showcase</span>
-          </a>
-        </li>
-        <li
-          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 dark:hover:text-zinc-300 active:opacity-80"
-        >
-          <a
-            href="agency"
-            class={currentPath === "agency" ? "active" : ""}
-          >
-            <span class="inline-block">Agency</span>
           </a>
         </li>
         <li
