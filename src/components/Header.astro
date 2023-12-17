@@ -3,7 +3,8 @@ import { buttonVariants } from '@/components/ui/button'
 import ThemeToggle from '@/components/ThemeToggle.astro'
 import { Image } from 'astro:assets'
 import logo from '../assets/logo.svg'
-const { pathName } = Astro.url
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
 <header
@@ -33,7 +34,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/"
-            class={Astro.url.pathname.split('/')[1] === '' ? 'active' : ''}
+            class={currentPath === "" ? "active" : ""}
           >
             <span class="inline-block">Introduction</span>
           </a>
@@ -43,7 +44,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/process"
-            class={Astro.url.pathname.split('process')[1] === '' ? 'active' : ''}
+            class={currentPath === "process" ? "active" : ""}
           >
             <span class="inline-block">Process</span>
           </a>
@@ -53,7 +54,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/showcase"
-            class={Astro.url.pathname.split('showcase')[1] === '' ? 'active' : ''}
+            class={currentPath === "showcase" ? "active" : ""}
           >
             <span class="inline-block">Showcase</span>
           </a>
@@ -63,7 +64,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/contact"
-            class={Astro.url.pathname.split('contact')[1] === '' ? 'active' : ''}
+            class={currentPath === "contact" ? "active" : ""}
           >
             <span class="inline-block">Contact</span>
           </a>
