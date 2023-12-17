@@ -11,9 +11,11 @@ import misty from '../assets/misty.jpg'
   description="Modern development for forward thinking individuals"
 >
   <div class="fade-bg -mt-20">
-    <section class="gap-6pb-40 container grid items-center pt-40 max-[600px]:pt-20">
+    <section
+      class="gap-6pb-40 container grid items-center pt-40 max-[600px]:pt-20"
+    >
       <div class="pb-40 pt-20">
-        <div class="flex flex-col items-start items-center gap-2 text-center">
+        <div class="flex flex-col items-center gap-2 text-center">
           <h1
             class="max-w-[900px] animate-fade text-4xl font-extrabold animate-delay-200 md:text-6xl"
           >
@@ -60,7 +62,7 @@ import misty from '../assets/misty.jpg'
     <div class="mx-auto max-w-screen-xl px-5">
       <div>
         <h2 class="animate-fade text-center text-slate-500 animate-delay-300">
-         Just a few proud supporters
+          Just a few proud supporters
         </h2><div
           class="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:gap-20 lg:gap-28"
         >
@@ -189,21 +191,20 @@ import misty from '../assets/misty.jpg'
     <div class="pt-32 md:pt-44" id="solution">
       <div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0">
         <div
-          class="flex-row-reverse items-center justify-between space-y-12 text-gray-600 md:flex md:gap-6 lg:gap-12 lg:space-y-0"
+          class="flex-row-reverse items-center justify-between space-y-12 text-gray-600 md:flex md:gap-3 lg:gap-5 lg:space-y-0"
         >
           <div class="relative ml-auto h-full md:w-1/2">
             <div class="mockup-browser border bg-base-300">
               <div class="mockup-browser-toolbar">
-                <div class="input">https://mistyrobotics.com</div>
+                <div class="input">www.mistyrobotics.com</div>
               </div>
-              <div class="flex justify-center"><Image
-                src={misty}
-                alt="Misty Robotics"
-              /></div>
+              <div class="flex justify-center">
+                <Image src={misty} alt="Misty Robotics" />
+              </div>
             </div>
           </div>
 
-          <div class="md:w-1/2 lg:w-[47%]">
+          <div class="md:w-1/2 lg:w-[40%]">
             <h2
               class="animate-fade text-3xl font-bold text-gray-900 animate-delay-500 animate-duration-1000 dark:text-white md:text-4xl lg:text-5xl"
             >
@@ -217,11 +218,11 @@ import misty from '../assets/misty.jpg'
               aspernatur quam mollitia.
             </p>
             <div
-              class="space-y-4 divide-y divide-gray-100 dark:divide-gray-800"
+              class="space-y-4"
             >
               <div class="mt-8 flex gap-4 md:items-center">
                 <div
-                  class="flex h-12 w-12 animate-fade gap-4 rounded border border-gray-200 animate-delay-500 animate-duration-1000 dark:border-gray-900"
+                  class="flex h-12 w-12 animate-fade gap-4 rounded no-border animate-delay-500 animate-duration-1000"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -253,7 +254,7 @@ import misty from '../assets/misty.jpg'
               </div>
               <div class="flex gap-4 pt-4 md:items-center">
                 <div
-                  class="flex h-12 w-12 animate-fade gap-4 rounded border border-gray-200 animate-delay-500 animate-duration-1000 dark:border-gray-900"
+                  class="flex h-12 w-12 animate-fade gap-4 rounded no-border animate-delay-200 animate-duration-1000"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -287,10 +288,10 @@ import misty from '../assets/misty.jpg'
                   </p>
                 </div>
               </div>
-            </div>            
+            </div>
             <div class="mt-8 flex gap-4 md:items-center">
               <div
-                class="flex h-12 w-12 animate-fade gap-4 rounded border border-gray-200 animate-delay-500 animate-duration-1000 dark:border-gray-900"
+                class="flex h-12 w-12 animate-fade gap-4 rounded no-border animate-delay-700 animate-duration-1000"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -411,151 +412,151 @@ import misty from '../assets/misty.jpg'
         </div>
       </div>
       <section id="managing" class="mb-40">
-          <div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0">
-            <div class="m-auto text-center lg:w-8/12 xl:w-7/12">
-              <h2
-                class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"
-              >
-                Start managing your company smarter today
-              </h2>
-            </div>
-            <div class="mt-12 md:mt-20">
+        <div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0">
+          <div class="m-auto text-center lg:w-8/12 xl:w-7/12">
+            <h2
+              class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"
+            >
+              Start managing your company smarter today
+            </h2>
+          </div>
+          <div class="mt-12 md:mt-20">
+            <div
+              class="relative rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/20 transition duration-500 dark:border-white/10 dark:bg-zinc-800 dark:shadow-none"
+            >
               <div
-                class="relative rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/20 transition duration-500 dark:border-white/10 dark:bg-zinc-800 dark:shadow-none"
+                class="flex flex-col gap-12 divide-y p-12 dark:divide-gray-800 md:flex-row md:divide-x md:divide-y-0"
               >
-                <div
-                  class="flex flex-col gap-12 divide-y p-12 dark:divide-gray-800 md:flex-row md:divide-x md:divide-y-0"
-                >
-                  <div class="text-center md:w-5/12">
-                    <h3
-                      class="text-3xl font-bold text-gray-900 dark:text-white"
-                    >
-                      Suite Enterprise
-                    </h3>
-                    <p class="text-lg text-gray-600 dark:text-gray-300">
-                      For your company of any size
-                    </p>
-                    <span
-                      class="mb-6 mt-12 inline-block text-6xl font-bold text-gray-900 dark:text-white"
-                      ><span class="text-4xl text-primary dark:text-gray-200"
-                        >$</span
-                      >234</span
-                    >
+                <div class="text-center md:w-5/12">
+                  <h3 class="text-3xl font-bold text-gray-900 dark:text-white">
+                    Suite Enterprise
+                  </h3>
+                  <p class="text-lg text-gray-600 dark:text-gray-300">
+                    For your company of any size
+                  </p>
+                  <span
+                    class="mb-6 mt-12 inline-block text-6xl font-bold text-gray-900 dark:text-white"
+                    ><span class="text-4xl text-primary dark:text-gray-200"
+                      >$</span
+                    >234</span
+                  >
 
-                    <div class="flex justify-center">
-                      <a
-                        href="/pages/register.html"
-                        class="relative flex h-11 w-max items-center justify-center px-5 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
-                      >
-                        <span class="relative w-max text-white dark:text-black">
-                          Get started
-                        </span>
-                      </a>
-                    </div>
-
-                    <p class="mt-12 text-sm text-gray-500 dark:text-gray-400">
-                      Includes : Security, Unlimited Storage, Payment, Search
-                      engine, and all features
-                    </p>
+                  <div class="flex justify-center">
+                    <a
+                      href="/pages/register.html"
+                      class="relative flex h-11 w-max items-center justify-center px-5 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
+                    >
+                      <span class="relative w-max text-white dark:text-black">
+                        Get started
+                      </span>
+                    </a>
                   </div>
-                  <div class="relative md:w-7/12 md:pl-12">
-                    <ul
-                      role="list"
-                      class="space-y-4 py-6 text-gray-600 dark:text-gray-300"
-                    >
-                      <li class="space-x-2">
-                        <span
-                          class="font-semibold text-primary dark:text-gray-300"
-                          >✓</span
-                        >
-                        <span>First premium advantage</span>
-                      </li>
-                      <li class="space-x-2">
-                        <span
-                          class="font-semibold text-primary dark:text-gray-300"
-                          >✓</span
-                        >
-                        <span>Second advantage weekly</span>
-                      </li>
-                      <li class="space-x-2">
-                        <span
-                          class="font-semibold text-primary dark:text-gray-300"
-                          >✓</span
-                        >
-                        <span>Third advantage donate to project</span>
-                      </li>
-                      <li class="space-x-2">
-                        <span
-                          class="font-semibold text-primary dark:text-gray-300"
-                          >✓</span
-                        >
-                        <span>Fourth, access to all components weekly</span>
-                      </li>
-                    </ul>
-                    <p class="text-gray-700 dark:text-white">
-                      Team can be any size, and you can add or switch members as
-                      needed. Companies using our platform include:
-                    </p>
-                    <div
-                      class="mt-12 flex flex-wrap items-center justify-between gap-6 grayscale"
-                    >
-                      <img
-                        class="h-8 w-auto lg:h-12"
-                        src="/images/clients/airbnb.svg"
-                        width="100"
-                        alt="airbnb"
-                      />
-                      <img
-                        class="h-6 w-auto lg:h-8"
-                        src="/images/clients/netflix.svg"
-                        width="100"
-                        alt="bissell"
-                      />
-                      <img
-                        class="h-8 w-auto lg:h-10"
-                        src="/images/clients/ge.svg"
-                        width="100"
-                        height="100"
-                        alt="ge"
-                      />
-                      <img
-                        class="ww-auto h-8 lg:h-12"
-                        src="/images/clients/microsoft.svg"
-                        width="100"
-                        alt="microsoft"
-                      />
-                    </div>
+
+                  <p class="mt-12 text-sm text-gray-500 dark:text-gray-400">
+                    Includes : Security, Unlimited Storage, Payment, Search
+                    engine, and all features
+                  </p>
+                </div>
+                <div class="relative md:w-7/12 md:pl-12">
+                  <ul
+                    role="list"
+                    class="space-y-4 py-6 text-gray-600 dark:text-gray-300"
+                  >
+                    <li class="space-x-2">
+                      <span
+                        class="font-semibold text-primary dark:text-gray-300"
+                        >✓</span
+                      >
+                      <span>First premium advantage</span>
+                    </li>
+                    <li class="space-x-2">
+                      <span
+                        class="font-semibold text-primary dark:text-gray-300"
+                        >✓</span
+                      >
+                      <span>Second advantage weekly</span>
+                    </li>
+                    <li class="space-x-2">
+                      <span
+                        class="font-semibold text-primary dark:text-gray-300"
+                        >✓</span
+                      >
+                      <span>Third advantage donate to project</span>
+                    </li>
+                    <li class="space-x-2">
+                      <span
+                        class="font-semibold text-primary dark:text-gray-300"
+                        >✓</span
+                      >
+                      <span>Fourth, access to all components weekly</span>
+                    </li>
+                  </ul>
+                  <p class="text-gray-700 dark:text-white">
+                    Team can be any size, and you can add or switch members as
+                    needed. Companies using our platform include:
+                  </p>
+                  <div
+                    class="mt-12 flex flex-wrap items-center justify-between gap-6 grayscale"
+                  >
+                    <img
+                      class="h-8 w-auto lg:h-12"
+                      src="/images/clients/airbnb.svg"
+                      width="100"
+                      alt="airbnb"
+                    />
+                    <img
+                      class="h-6 w-auto lg:h-8"
+                      src="/images/clients/netflix.svg"
+                      width="100"
+                      alt="bissell"
+                    />
+                    <img
+                      class="h-8 w-auto lg:h-10"
+                      src="/images/clients/ge.svg"
+                      width="100"
+                      height="100"
+                      alt="ge"
+                    />
+                    <img
+                      class="ww-auto h-8 lg:h-12"
+                      src="/images/clients/microsoft.svg"
+                      width="100"
+                      alt="microsoft"
+                    />
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="mt-20 flex flex-col gap-12 md:mt-32 lg:flex-row">
-              <div class="text-center lg:w-5/12 lg:pl-12 lg:text-left">
-                <h2
-                  class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl lg:text-4xl"
-                >
-                  Frequently Asqued Questions
-                </h2>
-                <p class="mt-4 text-gray-600 dark:text-gray-300">
-                  piente optio repellendus atque illum odio! Fugiat at expedita
-                  deserunt dolorum molestias.
-                </p>
-              </div>
-
-              <div
-                class="divide-y divide-gray-200 border-gray-200 dark:divide-gray-800 dark:border-gray-800 lg:w-7/12"
+          <div class="mt-20 flex flex-col gap-12 md:mt-32 lg:flex-row">
+            <div class="text-center lg:w-5/12 lg:pl-12 lg:text-left">
+              <h2
+                class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl lg:text-4xl"
               >
-                <div class="collapse collapse-arrow rounded-none rounded-t-lg bg-zinc-800">
-                  <input type="radio" name="my-accordion-2" checked="checked" />
-                  <div class="collapse-title text-lg font-medium">
-                    Click to open this one and close others
-                  </div>
-                  <div
-                    class="collapse-content text-sm font-normal leading-6 text-zinc-400"
-                  >
+                Frequently Asqued Questions
+              </h2>
+              <p class="mt-4 text-gray-600 dark:text-gray-300">
+                piente optio repellendus atque illum odio! Fugiat at expedita
+                deserunt dolorum molestias.
+              </p>
+            </div>
+
+            <div
+              class="divide-y divide-gray-200 border-gray-200 dark:divide-gray-800 dark:border-gray-800 lg:w-7/12"
+            >
+              <div
+                class="collapse collapse-arrow rounded-none rounded-t-lg bg-zinc-800"
+              >
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-lg font-medium">
+                  Click to open this one and close others
+                </div>
+                <div
+                  class="collapse-content text-sm font-normal leading-6 text-zinc-400"
+                >
+                  <p>
                     <p>
-                      <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nulla dignissim augue nec neque ultrices, a dignissim nisi
                       elementum. Suspendisse quis eleifend augue. Proin sit amet
@@ -565,7 +566,7 @@ import misty from '../assets/misty.jpg'
                       risus, gravida in congue vel, suscipit quis eros. Ut vitae
                       convallis erat, a volutpat nulla.
                     </p>
-                  </div>
+                  </p>
                 </div>
                 <div class="collapse collapse-arrow rounded-none bg-zinc-800">
                   <input type="radio" name="my-accordion-2" />
@@ -577,68 +578,72 @@ import misty from '../assets/misty.jpg'
                   >
                     <p>
                       <p>
-                      Curabitur ac scelerisque metus. Pellentesque ut ipsum
-                      volutpat erat placerat pretium nec ut urna. Donec ut lacus
-                      lacus. Suspendisse a nisi non risus porttitor varius et
-                      vitae lectus. Aenean rhoncus lectus velit, sit amet
-                      efficitur mauris viverra non. Pellentesque interdum arcu
-                      risus, nec suscipit tellus scelerisque nec. Sed iaculis
-                      aliquet ante consectetur posuere.
+                        Curabitur ac scelerisque metus. Pellentesque ut ipsum
+                        volutpat erat placerat pretium nec ut urna. Donec ut
+                        lacus lacus. Suspendisse a nisi non risus porttitor
+                        varius et vitae lectus. Aenean rhoncus lectus velit, sit
+                        amet efficitur mauris viverra non. Pellentesque interdum
+                        arcu risus, nec suscipit tellus scelerisque nec. Sed
+                        iaculis aliquet ante consectetur posuere.
+                      </p>
                     </p>
                   </div>
-                </div>
-                <div class="collapse collapse-arrow rounded-none bg-zinc-800">
-                  <input type="radio" name="my-accordion-2" />
-                  <div class="collapse-title text-lg font-medium">
-                    Click to open this one and close others
-                  </div>
-                  <div
-                    class="collapse-content text-sm font-normal leading-6 text-zinc-400"
-                  >
-                    <p class="pt-5 mb-5">
-                      Donec in congue nisi. Nam a risus a sapien scelerisque
-                      consectetur. Integer viverra tincidunt enim, ultricies
-                      efficitur ex venenatis ut. Proin sollicitudin lorem quis
-                      lectus rutrum porttitor. Etiam nec dui in mi ornare
-                      condimentum. Nulla a augue volutpat, scelerisque turpis
-                      eget, bibendum est. Nulla vulputate mi posuere, laoreet
-                      metus vitae, varius nunc. Nullam lacinia turpis ut justo
-                      pretium, a tempor tellus semper. In hac habitasse platea
-                      dictumst.
-                    </p>
+                  <div class="collapse collapse-arrow rounded-none bg-zinc-800">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-lg font-medium">
+                      Click to open this one and close others
+                    </div>
+                    <div
+                      class="collapse-content text-sm font-normal leading-6 text-zinc-400"
+                    >
+                      <p class="mb-5 pt-5">
+                        Donec in congue nisi. Nam a risus a sapien scelerisque
+                        consectetur. Integer viverra tincidunt enim, ultricies
+                        efficitur ex venenatis ut. Proin sollicitudin lorem quis
+                        lectus rutrum porttitor. Etiam nec dui in mi ornare
+                        condimentum. Nulla a augue volutpat, scelerisque turpis
+                        eget, bibendum est. Nulla vulputate mi posuere, laoreet
+                        metus vitae, varius nunc. Nullam lacinia turpis ut justo
+                        pretium, a tempor tellus semper. In hac habitasse platea
+                        dictumst.
+                      </p>
 
-                    <p class="pb-5">
-                      Fusce non sollicitudin est, ac porttitor libero.
-                      Pellentesque et dolor pharetra, vestibulum turpis quis,
-                      sodales odio. Nullam suscipit turpis quis cursus
-                      ullamcorper. Proin metus lorem, lobortis a fermentum quis,
-                      pretium vitae orci. Curabitur vulputate velit nec
-                      efficitur consectetur. Etiam et sapien magna. Morbi nec
-                      ultricies tellus. Suspendisse potenti.
-                    </p>
-                  </div>
-                </div>
-                <div class="collapse collapse-arrow  rounded-none rounded-b-lg bg-zinc-800">
-                  <input type="radio" name="my-accordion-2" />
-                  <div class="collapse-title text-lg font-medium">
-                    Click to open this one and close others
+                      <p class="pb-5">
+                        Fusce non sollicitudin est, ac porttitor libero.
+                        Pellentesque et dolor pharetra, vestibulum turpis quis,
+                        sodales odio. Nullam suscipit turpis quis cursus
+                        ullamcorper. Proin metus lorem, lobortis a fermentum
+                        quis, pretium vitae orci. Curabitur vulputate velit nec
+                        efficitur consectetur. Etiam et sapien magna. Morbi nec
+                        ultricies tellus. Suspendisse potenti.
+                      </p>
+                    </div>
                   </div>
                   <div
-                    class="collapse-content text-sm font-normal leading-6 text-zinc-400"
+                    class="collapse collapse-arrow rounded-none rounded-b-lg bg-zinc-800"
                   >
-                    <p class="pt-5 pb-5">
-                      Nunc nisl est, porta vitae ullamcorper dapibus, imperdiet
-                      vitae est. Donec posuere ipsum eu rhoncus molestie. Aenean
-                      dictum ante non vulputate sodales. Morbi malesuada, lorem
-                      nec rutrum ultricies, massa magna dapibus ipsum, vitae
-                      gravida augue metus nec magna. Aenean faucibus pretium
-                      diam at vehicula. Nunc id libero porta, convallis augue
-                      sit amet, ornare diam. Suspendisse potenti. Phasellus
-                      pretium arcu in erat fringilla, a hendrerit quam tempus.
-                      Curabitur malesuada nisi sed urna rutrum, id sagittis
-                      turpis cursus. In egestas lacus eu justo porta pretium.
-                      Pellentesque eleifend maximus gravida.
-                    </p>
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-lg font-medium">
+                      Click to open this one and close others
+                    </div>
+                    <div
+                      class="collapse-content text-sm font-normal leading-6 text-zinc-400"
+                    >
+                      <p class="pb-5 pt-5">
+                        Nunc nisl est, porta vitae ullamcorper dapibus,
+                        imperdiet vitae est. Donec posuere ipsum eu rhoncus
+                        molestie. Aenean dictum ante non vulputate sodales.
+                        Morbi malesuada, lorem nec rutrum ultricies, massa magna
+                        dapibus ipsum, vitae gravida augue metus nec magna.
+                        Aenean faucibus pretium diam at vehicula. Nunc id libero
+                        porta, convallis augue sit amet, ornare diam.
+                        Suspendisse potenti. Phasellus pretium arcu in erat
+                        fringilla, a hendrerit quam tempus. Curabitur malesuada
+                        nisi sed urna rutrum, id sagittis turpis cursus. In
+                        egestas lacus eu justo porta pretium. Pellentesque
+                        eleifend maximus gravida.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
