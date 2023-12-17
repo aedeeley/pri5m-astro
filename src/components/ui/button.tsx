@@ -12,16 +12,16 @@ const buttonVariants = cva(
         default: 'bg-primary text-primary-foreground hover:bg-primary/90 py-7',
         destructive:
           'bg-destructive text-destructive-foreground hover:bg-destructive/90',
-          outline:
-            'border border-input bg-background hover:border-slate-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition ease-in-out',
-            outlineintro:
-              'border border-input bg-background hover:border-slate-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition ease-in-out hover:animate-wiggle',
+        outline:
+          'border border-input bg-background hover:border-slate-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition ease-in-out',
+        outlineintro:
+          'border border-input bg-background hover:border-slate-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition ease-in-out hover:animate-wiggle',
         secondary:
           'bg-secondary text-secondary-foreground hover:bg-secondary/80',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
         fade: 'text-primary-foreground border hover:border-pink-500 py-7 px-10 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out',
-        fadeintro: 'text-primary-foreground border hover:border-pink-500 py-7 px-10 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out  hover:animate-wiggle',
+        fadeintro: 'text-primary-foreground py-7 px-10 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out  hover:animate-wiggle',
       },
       size: {
         default: 'h-10 px-4 py-2',
@@ -39,7 +39,7 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean
 }
 

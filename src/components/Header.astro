@@ -7,17 +7,24 @@ const { pathName } = Astro.url
 ---
 
 <header
-  class="sticky top-0 z-50 w-full backdrop-blur border-b border-neutral-200 dark:border-neutral-800"
+  class="sticky top-0 z-50 w-full border-b border-neutral-200 backdrop-blur dark:border-neutral-800"
 >
   <div
     class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
   >
-    <div class="flex gap-6 text-sm font-medium text-zinc-400 md:gap-10">
+    <div
+      class="flex gap-6 text-sm font-medium text-zinc-400 max-[600px]:text-xs md:gap-10"
+    >
       <ul id="nav" class="flex list-none gap-4 md:gap-8">
         <li>
           <a href="/" class="flex items-center space-x-2">
             <span class="inline-block"
-              ><Image src={logo} alt="PRI5M Logo" id="site-logo" class="max-w-[32px] float-left" /></span
+              ><Image
+                src={logo}
+                alt="PRI5M Logo"
+                id="site-logo"
+                class="float-left max-w-[32px] max-[600px]:max-w-[24px]"
+              /></span
             >
           </a>
         </li>
@@ -78,15 +85,14 @@ const { pathName } = Astro.url
 </header>
 
 <style>
-
   #nav li {
     float: left;
   }
   .active {
-    color: #363636 ;
-    font-weight:bold;
+    color: #363636;
+    font-weight: bold;
   }
- html.dark .active {
-    color: #fff !important
+  html.dark .active {
+    color: #fff !important;
   }
 </style>
