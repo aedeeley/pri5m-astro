@@ -43,7 +43,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/process"
-            class={Astro.url.pathname.split('process')[1] === ''
+            class={Astro.url.pathname.split('/process')[1] === ''
               ? 'active'
               : ''}
           >
@@ -67,7 +67,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/contact"
-            class={Astro.url.pathname.split('/contact')[1] === ''
+            class={Astro.url.pathname.split('pri5m.com/contact')[1] === ''
               ? 'active'
               : ''}
           >
