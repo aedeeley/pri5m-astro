@@ -43,9 +43,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/process"
-            class={Astro.url.pathname.split('process')[1] === ''
-              ? 'active'
-              : ''}
+            class={Astro.url.pathname.split('process')[1] === '' ? 'active' : ''}
           >
             <span class="inline-block">Process</span>
           </a>
@@ -55,9 +53,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/showcase"
-            class={Astro.url.pathname.split('showcase')[1] === ''
-              ? 'active'
-              : ''}
+            class={Astro.url.pathname.split('showcase')[1] === '' ? 'active' : ''}
           >
             <span class="inline-block">Showcase</span>
           </a>
@@ -67,9 +63,7 @@ const { pathName } = Astro.url
         >
           <a
             href="/contact"
-            class={Astro.url.pathname.split('contact')[1] === ''
-              ? 'active'
-              : ''}
+            class={Astro.url.pathname.split('contact')[1] === '' ? 'active' : ''}
           >
             <span class="inline-block">Contact</span>
           </a>
