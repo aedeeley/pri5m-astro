@@ -3,8 +3,8 @@ import { buttonVariants } from '@/components/ui/button'
 import ThemeToggle from '@/components/ThemeToggle.astro'
 import { Image } from 'astro:assets'
 import logo from '../assets/logo.svg'
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1);  
+const pathname = new URL(Astro.request.url).pathname
+const currentPath = pathname.slice(1)
 ---
 
 <header
@@ -14,7 +14,7 @@ const currentPath = pathname.slice(1);
     class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
   >
     <div
-      class="flex gap-6 text-sm font-medium text-zinc-400 max-[600px]:text-xs md:gap-10"
+      class="flex gap-6 text-sm font-medium text-zinc-500 max-[600px]:text-xs md:gap-10"
     >
       <ul id="nav" class="flex list-none gap-4 md:gap-8">
         <li>
@@ -26,46 +26,34 @@ const currentPath = pathname.slice(1);
                 id="site-logo"
                 class="float-left max-w-[32px] max-[600px]:max-w-[24px]"
               /></span
-            ><div class={currentPath === "" ? "active" : ""}>Prism</div>
+            ><div class="font-bold text-zinc-800 dark:text-white ">Prism</div>
           </a>
         </li>
         <li
-          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 dark:hover:text-zinc-300 active:opacity-80"
+          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
         >
-          <a
-            href="services"
-            class={currentPath == "services" ? "active" : ""}
-          >
+          <a href="services" class={currentPath === 'services' ? 'active' : ''}>
             <span class="inline-block">Services</span>
           </a>
         </li>
         <li
-          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 dark:hover:text-zinc-300 active:opacity-80"
+          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
         >
-          <a
-            href="process"
-            class={currentPath == "process" ? "active" : ""}
-          >
+          <a href="process" class={currentPath === 'process' ? 'active' : ''}>
             <span class="inline-block">Process</span>
           </a>
         </li>
         <li
-          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 dark:hover:text-zinc-300 active:opacity-80"
+          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
         >
-          <a
-            href="showcase"
-            class={currentPath == "showcase" ? "active" : ""}
-          >
+          <a href="showcase" class={currentPath === 'showcase' ? 'active' : ''}>
             <span class="inline-block">Showcase</span>
           </a>
         </li>
         <li
-          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 dark:hover:text-zinc-300 active:opacity-80"
+          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
         >
-          <a
-            href="contact"
-            class={currentPath == "contact" ? "active" : ""}
-          >
+          <a href="contact" class={currentPath === 'contact' ? 'active' : ''}>
             <span class="inline-block">Contact</span>
           </a>
         </li>
