@@ -8,7 +8,7 @@ const currentPath = pathname.slice(1)
 ---
 
 <header
-  class="sticky top-0 z-50 w-full border-b border-neutral-100 backdrop-blur dark:border-neutral-800"
+  class="sticky top-0 z-50 w-full border-b border-neutral-100 backdrop-blur dark:border-[#1d1d1d]"
 >
   <div
     class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
@@ -32,21 +32,21 @@ const currentPath = pathname.slice(1)
         <li
           class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
         >
-          <a href="process" class={currentPath === 'process' ? 'active' : ''}>
+          <a href="/process" class={currentPath === 'process' ? 'active' : ''}>
             <span class="inline-block">Process</span>
           </a>
         </li>
         <li
           class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
         >
-          <a href="showcase" class={currentPath === 'showcase' ? 'active' : ''}>
+          <a href="/showcase" class={currentPath === 'showcase' ? 'active' : ''}>
             <span class="inline-block">Showcase</span>
           </a>
         </li>
         <li
           class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
         >
-          <a href="contact" class={currentPath === 'contact' ? 'active' : ''}>
+          <a href="/contact" class={currentPath === 'contact' ? 'active' : ''}>
             <span class="inline-block">Contact</span>
           </a>
         </li>
