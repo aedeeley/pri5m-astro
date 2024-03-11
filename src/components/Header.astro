@@ -8,8 +8,7 @@ const currentPath = pathname.slice(1)
 ---
 
 <header
-  class="sticky top-0 z-50 w-full border-b backdrop-blur nav-border"  transition:persist
->
+  class="sticky top-0 z-50 w-full border-b backdrop-blur nav-border navigation">
   <div
     class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
   >
@@ -72,3 +71,18 @@ const currentPath = pathname.slice(1)
     color: #fff !important;
   }
 </style>
+
+<script>
+  var scrollPosition = window.scrollY;
+  var navBG = document.getElementsByClassName('navigation')[0];
+  window.addEventListener('scroll', function() {
+      scrollPosition = window.scrollY;
+  
+      if (scrollPosition >= 200) {
+        navBG.classList.add('nav-bg');
+      } else {
+        navBG.classList.remove('nav-bg');
+      }
+  
+    });
+  </script>
