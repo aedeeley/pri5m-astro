@@ -167,3 +167,11 @@
 .grad:hover::before {
   opacity: 1;
 }
+
+.nav-border {
+  border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+[data-mode="dark"] .nav-border {
+  border-bottom:1px solid rgba(255,255,255,0.7);
+}
