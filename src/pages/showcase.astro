@@ -4,6 +4,8 @@ import { Image } from 'astro:assets'
 import whitney from '../assets/whitney.webp'
 import goldleaf from '../assets/goldleaf.webp'
 import nook from '../assets/nook.webp'
+import misty from '../assets/misty.webp'
+import aroma from '../assets/aroma.webp'
 ---
 
 <BaseLayout
@@ -48,7 +50,7 @@ import nook from '../assets/nook.webp'
             class="mt-2 max-w-[300px] px-4 text-center text-xl text-zinc-500 lg:px-0 lg:text-left animate-fade animate-delay-300 animate-duration-[500ms]"
             data-astro-cid-3zd5jhbd=""
           >
-            We created an illustrious digital portfolio for a Denver-based mural artist &amp; apparel designer. 
+            We created an illustrious digital portfolio for a Denver based mural artist &amp; apparel designer. 
           </p>
           <a
             href="/showcase/whitney/"
@@ -78,7 +80,7 @@ import nook from '../assets/nook.webp'
           We revamped a static website into a dynamic, eccommerce platform for a national cannabis brand.
         </p>
         <a
-          href="fundraising"
+          href="/showcase/goldleaf/"
           class="mt-6 rounded border px-3 py-2 text-base text-white hover:bg-gray-700 animate-fade animate-delay-400 animate-duration-[500ms]"
         >
           Read case study
@@ -104,7 +106,7 @@ import nook from '../assets/nook.webp'
           We built a fun and informative site for a Tampa Bay based rapper.
         </p>
         <a
-          href="/metrics"
+          href="/showcase/nook/"
           class="mt-6 rounded border px-3 py-2 text-base text-white hover:bg-gray-700"
         >
           Read case study
@@ -112,105 +114,55 @@ import nook from '../assets/nook.webp'
         <Image src={nook} alt="Nook Nguyen" class="max-w-[500px] align-bottom pt-6 animate-fade-up animate-delay-300 animate-duration-[800ms] rounded-t-xl" />
       </div> 
       <div
-        class="col-span-2 flex flex-col items-center overflow-hidden rounded-xl lg:col-span-1 bg-neutral-950 grad animate-fade animate-delay-100 goldleaf transition duration-200 hover:scale-[1.01]"
+        class="track-gradient bg-dark col-span-2 flex flex-col items-center overflow-hidden rounded-xl lg:col-span-1 bg-neutral-950 grad animate-fade animate-delay-100 misty transition duration-200 hover:scale-[1.01]"
+        data-astro-cid-54lkgkkn=""
+      >
+        <h2
+          class="mt-10 text-3xl font-extrabold text-white"
+          data-astro-cid-54lkgkkn=""
+        >
+          Misty Robotics
+        </h2>
+        <p
+          class="mt-2 max-w-md px-4 text-center text-xl text-zinc-500"
+          data-astro-cid-54lkgkkn=""
+        >
+          A redesigned homepage + custom Shopify integration brought new life to a Boulder based robotics company. 
+        </p>
+        <a
+          href="/showcase/misty/"
+          class="mt-6 rounded border px-3 py-2 text-base text-white hover:bg-gray-700"
+        >
+          Read case study
+        </a>
+        <Image src={misty} alt="Misty Robotics" class="align-bottom w-full max-w-2xl pt-6 mb-[-40px] animate-fade-up animate-delay-300 animate-duration-[800ms]" />
+      </div> 
+      <div
+        class="col-span-2 flex flex-col items-center overflow-hidden rounded-xl lg:col-span-1 bg-neutral-950 grad animate-fade animate-delay-100 aroma transition duration-200 hover:scale-[1.01]"
         data-astro-cid-nfvjidkh=""
       >
         <h2
           class="mt-10 mx-auto text-3xl font-extrabold text-white animate-fade animate-delay-200 animate-duration-[500ms]"
           data-astro-cid-nfvjidkh=""
         >
-          Gold Leaf Cannabis
+        Aroma Annapolis
         </h2>
         <p
           class="mt-2 max-w-md px-4 text-center text-xl text-zinc-500 animate-fade animate-delay-300 animate-duration-[500ms]"
           data-astro-cid-nfvjidkh=""
         >
-          We revamped a static website into a dynamic, eccommerce platform for a national cannabis brand.
+          A custom eCommerce + marketing platform shaped a new day for an Annapolis based glassware company. 
         </p>
         <a
-          href="fundraising"
+          href="/showcase/aroma/"
           class="mt-6 rounded border px-3 py-2 text-base text-white hover:bg-gray-700 animate-fade animate-delay-400 animate-duration-[500ms]"
         >
           Read case study
         </a>
         <div class="mt-auto" data-astro-cid-nfvjidkh="">
-          <Image src={goldleaf} alt="Gold Leaf" class="w-full max-w-2xl pt-6 animate-fade-up animate-delay-300 animate-duration-[800ms]" />
+          <Image src={aroma} alt="Aroma Annapolis" class="w-full max-w-2xl pt-6 animate-fade-up animate-delay-300 animate-duration-[800ms]" />
         </div>
       </div>
-      <div
-        class="track-gradient bg-dark col-span-2 flex flex-col items-center overflow-hidden rounded-xl lg:col-span-1 bg-neutral-950 grad animate-fade animate-delay-100 nook transition duration-200 hover:scale-[1.01]"
-        data-astro-cid-54lkgkkn=""
-      >
-        <h2
-          class="mt-10 text-3xl font-extrabold text-white"
-          data-astro-cid-54lkgkkn=""
-        >
-          Nook Nguyen
-        </h2>
-        <p
-          class="mt-2 max-w-md px-4 text-center text-xl text-zinc-500"
-          data-astro-cid-54lkgkkn=""
-        >
-          We built a fun and informative site for a Tampa Bay based rapper.
-        </p>
-        <a
-          href="/metrics"
-          class="mt-6 rounded border px-3 py-2 text-base text-white hover:bg-gray-700"
-        >
-          Read case study
-        </a>
-        <Image src={nook} alt="Nook Nguyen" class="max-w-[500px] align-bottom pt-6 animate-fade-up animate-delay-300 animate-duration-[800ms] rounded-t-xl" />
-      </div> 
-      <div
-        class="col-span-2 flex flex-col items-center overflow-hidden rounded-xl lg:col-span-1 bg-neutral-950 grad animate-fade animate-delay-100 goldleaf transition duration-200 hover:scale-[1.01]"
-        data-astro-cid-nfvjidkh=""
-      >
-        <h2
-          class="mt-10 mx-auto text-3xl font-extrabold text-white animate-fade animate-delay-200 animate-duration-[500ms]"
-          data-astro-cid-nfvjidkh=""
-        >
-          Gold Leaf Cannabis
-        </h2>
-        <p
-          class="mt-2 max-w-md px-4 text-center text-xl text-zinc-500 animate-fade animate-delay-300 animate-duration-[500ms]"
-          data-astro-cid-nfvjidkh=""
-        >
-          We revamped a static website into a dynamic, eccommerce platform for a national cannabis brand.
-        </p>
-        <a
-          href="fundraising"
-          class="mt-6 rounded border px-3 py-2 text-base text-white hover:bg-gray-700 animate-fade animate-delay-400 animate-duration-[500ms]"
-        >
-          Read case study
-        </a>
-        <div class="mt-auto" data-astro-cid-nfvjidkh="">
-          <Image src={goldleaf} alt="Gold Leaf" class="w-full max-w-2xl pt-6 animate-fade-up animate-delay-300 animate-duration-[800ms]" />
-        </div>
-      </div>
-      <div
-        class="track-gradient bg-dark col-span-2 flex flex-col items-center overflow-hidden rounded-xl lg:col-span-1 bg-neutral-950 grad animate-fade animate-delay-100 nook transition duration-200 hover:scale-[1.01]"
-        data-astro-cid-54lkgkkn=""
-      >
-        <h2
-          class="mt-10 text-3xl font-extrabold text-white"
-          data-astro-cid-54lkgkkn=""
-        >
-          Nook Nguyen
-        </h2>
-        <p
-          class="mt-2 max-w-md px-4 text-center text-xl text-zinc-500"
-          data-astro-cid-54lkgkkn=""
-        >
-          We built a fun and informative site for a Tampa Bay based rapper.
-        </p>
-        <a
-          href="/metrics"
-          class="mt-6 rounded border px-3 py-2 text-base text-white hover:bg-gray-700"
-        >
-          Read case study
-        </a>
-        <Image src={nook} alt="Nook Nguyen" class="max-w-[500px] align-bottom pt-6 animate-fade-up animate-delay-300 animate-duration-[800ms] rounded-t-xl" />
-      </div> 
     </div>
   </section>
 </BaseLayout>
