@@ -76,12 +76,26 @@
   }
 }
 
+.navigation {
+  transition:background-color .35s ease-in-out;
+}
+
+.nav-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark .nav-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
 .nav-bg {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom:transparent;
 }
 
 .dark .nav-bg {
-  background:rgba(24,24,27,0.85);
+  background: rgba(24, 24, 27, 0.85);
+  border-bottom:transparent;
 }
 
 .fade {
@@ -128,7 +142,7 @@
   background: rgb(7, 41, 48);
   background: radial-gradient(
     circle,
-    rgb(4, 26, 31) 0%,
+    rgb(5, 34, 41) 0%,
     rgba(10, 10, 10, 1) 100%
   );
   z-index: -1;
@@ -146,7 +160,7 @@
   background: rgb(7, 44, 51);
   background: radial-gradient(
     circle,
-    rgb(31, 26, 1) 0%,
+    rgb(36, 30, 1) 0%,
     rgba(10, 10, 10, 1) 100%
   );
   z-index: -1;
@@ -164,7 +178,7 @@
   background: rgb(7, 41, 48);
   background: radial-gradient(
     circle,
-    rgb(27, 1, 31) 0%,
+    rgb(34, 1, 39) 0%,
     rgba(10, 10, 10, 1) 100%
   );
   z-index: -1;
@@ -174,12 +188,4 @@
 
 .grad:hover::before {
   opacity: 1;
-}
-
-.nav-border {
-  border-bottom:1px solid rgba(0,0,0,0.05);
-}
-
-[data-mode="dark"] .nav-border {
-  border-bottom:1px solid rgba(255,255,255,0.7);
 }
