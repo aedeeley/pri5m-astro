@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -77,14 +76,94 @@
   }
 }
 
-
 .fade {
-  background: linear-gradient(90deg, #60BB46 0%, #3292D0 33.33%, #E13894 64.58%, #F7941E 100%);
+  background: linear-gradient(
+    90deg,
+    #60bb46 0%,
+    #3292d0 33.33%,
+    #e13894 64.58%,
+    #f7941e 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .fade-bg {
-  background: linear-gradient(90deg, #5fbb4617 0%, #3291d015 33.33%, #e1389517 64.58%, #f7951e17 100%);
+  background: linear-gradient(
+    90deg,
+    #5fbb4617 0%,
+    #3291d015 33.33%,
+    #e1389517 64.58%,
+    #f7951e17 100%
+  );
+}
+
+.grad {
+  background: rgb(7, 41, 48);
+  background: radial-gradient(
+    circle,
+    rgb(27, 27, 27) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: 1;
+  position: relative;
+}
+
+.whitney.grad::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 41, 48);
+  background: radial-gradient(
+    circle,
+    rgb(4, 26, 31) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.goldleaf.grad::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 44, 51);
+  background: radial-gradient(
+    circle,
+    rgb(31, 26, 1) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.nook.grad::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 41, 48);
+  background: radial-gradient(
+    circle,
+    rgb(27, 1, 31) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.grad:hover::before {
+  opacity: 1;
 }
