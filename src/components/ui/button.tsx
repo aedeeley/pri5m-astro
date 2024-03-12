@@ -21,7 +21,7 @@ const buttonVariants = cva(
         ghost: 'hover:animate-wiggle-more hover:opacity-70 active:opacity-40',
         link: 'text-primary underline-offset-4 hover:underline',
         fade: 'text-primary-foreground border hover:border-pink-500 py-7 px-10 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out',
-        fadeintro: 'text-primary-foreground py-7 px-10 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out hover:opacity-90 active:opacity-50',
+        fadeintro: 'text-primary-foreground py-7 px-6 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out hover:opacity-90 active:opacity-50',
       },
       size: {
         default: 'h-10 px-4 py-2',
