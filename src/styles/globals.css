@@ -225,6 +225,11 @@
   opacity: 1;
 }
 
+#industry-list .fa-arrow-right {
+  font-size:7pt;
+  vertical-align:middle;
+}
+
 @layer components {
     .navbar-active .hamburger div:first-child {
     @apply rotate-45 translate-y-1.5;
