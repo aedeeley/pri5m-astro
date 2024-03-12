@@ -11,7 +11,7 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
 if (Astro.props.ogImage === undefined) {
-  Astro.props.ogImage = new URL('favicon.svg', canonicalURL)
+  Astro.props.ogImage = new URL('', canonicalURL)
 }
 
 const { title, description, ogImage } = Astro.props
@@ -23,11 +23,15 @@ const { title, description, ogImage } = Astro.props
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
 <link rel="canonical" href={canonicalURL} />
-<link
-  rel="shortcut icon"
-  type="image/svg+xml"
-  href={`${Astro.site}siteicon.svg`}
-/>
+
+<link rel="apple-touch-icon" sizes="180x180" href="{`${Astro.site}apple-touch-icon.png`} >
+<link rel="icon" type="image/png" sizes="32x32" href="{`${Astro.site}favicon-32x32.png`} >
+<link rel="icon" type="image/png" sizes="16x16" href="{`${Astro.site}favicon-16x16.png`} >
+<link rel="manifest" href="{`${Astro.site}site.webmanifest`}>
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
