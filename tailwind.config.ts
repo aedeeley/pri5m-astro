@@ -73,5 +73,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animated"),require("daisyui")],
+  plugins: [require("tailwindcss-animated"),require("daisyui"),require("tailwind-hamburgers")],
 } satisfies Config

@@ -1,59 +1,65 @@
 ---
 import { buttonVariants } from '@/components/ui/button'
+import Nav from '@/components/Nav.astro'
 import ThemeToggle from '@/components/ThemeToggle.astro'
-import { Image } from 'astro:assets'
-import logo from '../assets/logo.svg'
+import Social from '@/components/Social.astro'
 const pathname = new URL(Astro.request.url).pathname
 const currentPath = pathname.slice(1)
 ---
 
 <header
-  class="sticky top-0 z-50 w-full border-b backdrop-blur nav-border navigation">
+  class="nav-border navigation sticky top-0 z-50 w-full border-b backdrop-blur"
+>
   <div
     class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
   >
     <div
       class="flex gap-6 text-sm font-medium text-zinc-500 max-[600px]:text-xs md:gap-10"
     >
-      <ul id="nav" class="flex list-none gap-4 md:gap-8">
-        <li>
-          <a href="/" class="flex items-center space-x-2 active:opacity-80">
-            <span class="inline-block"
-              ><Image
-                src={logo}
-                alt="PRI5M Logo"
-                id="site-logo"
-                class="float-left max-w-[32px] max-[600px]:max-w-[24px]"
-              /></span
-            ><div class="font-bold text-zinc-800 dark:text-white ">Prism</div>
-          </a>
-        </li>
-        <li
-          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
-        >
-          <a href="/process" class={currentPath === 'process/' ? 'active' : ''}>
-            <span class="inline-block">Process</span>
-          </a>
-        </li>
-        <li
-          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
-        >
-          <a href="/showcase" class={currentPath === 'showcase/' ? 'active' : ''}>
-            <span class="inline-block">Showcase</span>
-          </a>
-        </li>
-        <li
-          class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300"
-        >
-          <a href="/contact" class={currentPath === 'contact/' ? 'active' : ''}>
-            <span class="inline-block">Contact</span>
-          </a>
-        </li>
-      </ul>
+      <Nav />
     </div>
     <div class="flex flex-1 items-center justify-end space-x-4">
-      <nav class="flex items-center space-x-1">
-        <ThemeToggle />
+      <nav class="animation-1000 flex items-center gap-3 space-x-1">
+        <Social />
+        <div><ThemeToggle /></div>
+
+        <div
+          class="flex hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 sm:hidden md:hidden lg:hidden xl:hidden"
+        >
+          <span class="inline-block">
+
+
+            <details class="dropdown dropdown-bottom dropdown-end">
+              <summary class="list-none"><div class="tham tham-e-squeeze tham-w-5">
+                <div class="tham-box">
+                  <div class="tham-inner bg-zinc-300"></div>
+                </div>
+              </div></summary>
+              <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 mt-5">
+                
+  <li
+>
+  <a href="/process" class={currentPath === 'process/' ? 'active' : ''}>
+    <span class="inline-block">Process</span>
+  </a>
+</li>
+<li>
+  <a href="/showcase" class={currentPath === 'showcase/' ? 'active' : ''}>
+    <span class="inline-block">Showcase</span>
+  </a>
+</li>
+<li>
+  <a href="/contact" class={currentPath === 'contact/' ? 'active' : ''}>
+    <span class="inline-block">Contact</span>
+  </a>
+</li>
+              </ul>
+            </details>
+            
+            
+            </span
+          >
+        </div>
       </nav>
     </div>
   </div>
@@ -73,16 +79,15 @@ const currentPath = pathname.slice(1)
 </style>
 
 <script>
-  var scrollPosition = window.scrollY;
-  var navBG = document.getElementsByClassName('navigation')[0];
-  window.addEventListener('scroll', function() {
-      scrollPosition = window.scrollY;
-  
-      if (scrollPosition >= 100) {
-        navBG.classList.add('nav-bg');
-      } else {
-        navBG.classList.remove('nav-bg');
-      }
-  
-    });
-  </script>
+  var scrollPosition = window.scrollY
+  var navBG = document.getElementsByClassName('navigation')[0]
+  window.addEventListener('scroll', function () {
+    scrollPosition = window.scrollY
+
+    if (scrollPosition >= 100) {
+      navBG.classList.add('nav-bg')
+    } else {
+      navBG.classList.remove('nav-bg')
+    }
+  })
+</script>
