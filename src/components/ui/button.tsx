@@ -15,9 +15,9 @@ const buttonVariants = cva(
         outline:
           'border border-input bg-background hover:border-slate-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition ease-in-out duration-500',
         outlineintro:
-          'border border-input bg-background hover:border-zinc-400 hover:dark:border-zinc-900 hover:text-accent-foreground py-7 px-7 tracking-wide transition duration-500 ease-in-out active:opacity-50',
+          'border border-input bg-background hover:border-zinc-400 hover:dark:border-zinc-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition duration-500 ease-in-out active:opacity-50 group',
         secondary:
-          'bg-secondary text-secondary-foreground hover:bg-secondary/80 duration-500',
+          'px-6 py-6 bg-secondary text-secondary-foreground hover:bg-secondary/80 duration-500 group',
         ghost: 'hover:animate-wiggle-more hover:opacity-70 active:opacity-40 duration-500',
         link: 'text-primary underline-offset-4 hover:underline duration-500',
         fade: 'text-primary-foreground border hover:border-pink-500 py-7 px-10 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out duration-500',
