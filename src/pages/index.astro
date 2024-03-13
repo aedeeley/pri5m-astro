@@ -1,21 +1,10 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
+import Tech from '@/components/Tech.astro'
 import { buttonVariants } from '@/components/ui/button'
 import { Image } from 'astro:assets'
 import logo from '../assets/logo.svg'
 import misty from '../assets/misty.webp'
-import chrome from '../assets/chrome.svg'
-import figma from '../assets/figma.svg'
-import google_ads from '../assets/google_ads.svg'
-import mastercard from '../assets/mastercard.svg'
-import spotify from '../assets/spotify.svg'
-import notion from '../assets/notion.svg'
-import zapier from '../assets/zapier.svg'
-import dropbox from '../assets/dropbox.svg'
-import loom from '../assets/loom.svg'
-import slack from '../assets/slack.svg'
-import mailchimp from '../assets/mailchimp.svg'
-import procreate from '../assets/procreate.svg'
 import '../assets/fontawesome/css/all.min.css'
 ---
 
@@ -56,14 +45,14 @@ import '../assets/fontawesome/css/all.min.css'
             id="site-logo"
             class="mr-3 max-w-[24px]"
           />
-          Continue reading
+          Learn more
         </a>
           <a
-            href="#"
+            href="/showcase"
             rel="noreferrer"
             class={buttonVariants({ variant: 'fadeintro' })}
           >
-          Take the Survey
+          See project showcase
           </a>
         </div>
       </div>
@@ -182,144 +171,20 @@ import '../assets/fontawesome/css/all.min.css'
       <div
         class="mx-auto max-w-7xl items-center px-8 py-40 md:px-12 lg:px-16 xl:px-24"
       >
-        <div class="max-w-4xl">
+        <div class="max-w-lg">
           <h2
             class="text-3xl font-semibold tracking-tighter text-gray-900 lg:text-5xl"
           >
             <span class="fade">Prism</span> has a diverse technology stack.
           </h2>
           <p
-              class="mb-5 mt-5 animate-fade text-gray-300 animate-delay-500 animate-duration-1000 dark:text-gray-600"
+              class="mb-5 mt-5 animate-fade animate-delay-500 animate-duration-1000 text-gray-600"
             >
             We're here to tackle your technological and marketing problems. To do so, we're always up to date on the latest + greatest technologies, so you can focus on what you need to!
             </p>
         </div>
         <div>
-          <ul
-            role="list"
-            class="mt-12 grid list-none grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-x-6 lg:gap-y-12"
-          >
-            <li>
-              <div>
-                <span><Image src={chrome} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Chrome</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Municipal management performance corporate investment grade
-                bonds.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span><Image src={figma} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Figma</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span><Image src={google_ads} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Google Ads</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span><Image src={mastercard} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Mastercard</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span><Image src={slack} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Slack</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span><Image src={spotify} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Spotify</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span><Image src={notion} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Notion</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span> <Image src={zapier} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Zapier</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span> <Image src={dropbox} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Dropbox</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span> <Image src={loom} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Loom</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span> <Image src={mailchimp} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Mailchimp</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-            <li>
-              <div>
-                <span> <Image src={procreate} alt="" /></span>
-                <p class="mt-5 font-semibold text-gray-900">Procreate</p>
-              </div>
-              <div class="mt-2 text-sm text-slate-500">
-                Corporate bonds debt fiat risk return municipal retirement
-                interest rate.
-              </div>
-            </li>
-          </ul>
+          <Tech />
         </div>
       </div>
       <div
@@ -559,3 +424,21 @@ import '../assets/fontawesome/css/all.min.css'
     </section>
   </section>
 </BaseLayout>
+
+<style>
+  
+
+.fade-bg {
+  background: linear-gradient(
+    90deg,
+    #5fbb4617 0%,
+    #3291d015 33.33%,
+    #e1389517 64.58%,
+    #f7951e17 100%
+  );
+}
+#industry-list .fa-arrow-right {
+  font-size: 7pt;
+  vertical-align: middle;
+}
+</style>

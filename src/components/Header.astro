@@ -33,28 +33,21 @@ const currentPath = pathname.slice(1)
     </a>
   </li>
   <li
-    class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
+    class="items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
   >
     <a href="/process" class={currentPath === 'process/' ? 'active' : ''}>
       <span class="inline-block">Process</span>
     </a>
   </li>
   <li
-    class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
+    class="items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
   >
     <a href="/showcase" class={currentPath === 'showcase/' ? 'active' : ''}>
       <span class="inline-block">Showcase</span>
     </a>
   </li>
   <li
-    class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
-  >
-    <a href="/studio" class={currentPath === 'studio/' ? 'active' : ''}>
-      <span class="inline-block">Studio </span>
-    </a>
-  </li>
-  <li
-    class="flex items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
+    class="items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
   >
     <a href="/contact" class={currentPath === 'contact/' ? 'active' : ''}>
       <span class="inline-block">Contact</span>
@@ -76,30 +69,25 @@ const currentPath = pathname.slice(1)
             <details class="dropdown dropdown-bottom dropdown-end">
               <summary class="list-none"><div class="tham tham-e-squeeze tham-w-5">
                 <div class="tham-box">
-                  <div class="tham-inner bg-zinc-300"></div>
+                  <div class="tham-inner bg-zinc-700 dark:bg-zinc-300"></div>
                 </div>
               </div></summary>
-              <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 mt-5">
+              <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 dark:bg-zinc-100 rounded-box w-52 mt-5">
                 
   <li
 >
   <a href="/process" class={currentPath === 'process/' ? 'active' : ''}>
-    <span class="inline-block">Process</span>
+    <span class="inline-block text-zinc-100 dark:text-zinc-900 hover:tex-zinc-500">Process</span>
   </a>
 </li>
 <li>
   <a href="/showcase" class={currentPath === 'showcase/' ? 'active' : ''}>
-    <span class="inline-block">Showcase</span>
-  </a>
-</li>
-<li>
-  <a href="/studio" class={currentPath === 'studio/' ? 'active' : ''}>
-    <span class="inline-block">Studio</span>
+    <span class="inline-block text-zinc-100 dark:text-zinc-900 hover:tex-zinc-500">Showcase</span>
   </a>
 </li>
 <li>
   <a href="/contact" class={currentPath === 'contact/' ? 'active' : ''}>
-    <span class="inline-block">Contact</span>
+    <span class="inline-block text-zinc-100 dark:text-zinc-900 hover:tex-zinc-500">Contact</span>
   </a>
 </li>
               </ul>
@@ -125,6 +113,19 @@ const currentPath = pathname.slice(1)
   html.dark .active {
     color: #fff !important;
   }
+
+.navigation {
+  transition: background-color 0.35s ease-in-out;
+}
+
+.nav-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark .nav-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
 </style>
 
 <script>

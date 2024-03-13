@@ -9,18 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-primary/90 py-7',
+        default: 'bg-primary text-primary-foreground hover:bg-primary/90 py-7 duration-500',
         destructive:
-          'bg-destructive text-destructive-foreground hover:bg-destructive/90',
+          'bg-destructive text-destructive-foreground hover:bg-destructive/90 duration-500',
         outline:
-          'border border-input bg-background hover:border-slate-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition ease-in-out',
+          'border border-input bg-background hover:border-slate-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition ease-in-out duration-500',
         outlineintro:
-          'border border-input bg-background hover:border-slate-700 hover:text-accent-foreground py-7 px-7 tracking-wide transition ease-in-out active:opacity-50',
+          'border border-input bg-background hover:border-zinc-400 hover:dark:border-zinc-900 hover:text-accent-foreground py-7 px-7 tracking-wide transition duration-500 ease-in-out active:opacity-50',
         secondary:
-          'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        ghost: 'hover:animate-wiggle-more hover:opacity-70 active:opacity-40',
-        link: 'text-primary underline-offset-4 hover:underline',
-        fade: 'text-primary-foreground border hover:border-pink-500 py-7 px-10 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out',
+          'bg-secondary text-secondary-foreground hover:bg-secondary/80 duration-500',
+        ghost: 'hover:animate-wiggle-more hover:opacity-70 active:opacity-40 duration-500',
+        link: 'text-primary underline-offset-4 hover:underline duration-500',
+        fade: 'text-primary-foreground border hover:border-pink-500 py-7 px-10 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out duration-500',
         fadeintro: 'text-primary-foreground py-7 px-6 text-white text-lg tracking-wide bg-gradient-to-r from-pink-600 to-orange-500 transition ease-in-out hover:opacity-90 active:opacity-50',
       },
       size: {

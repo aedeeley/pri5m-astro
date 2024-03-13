@@ -167,3 +167,111 @@ import aroma from '../assets/aroma.webp'
   </section>
 
 </BaseLayout>
+
+<style>
+  
+
+.grad {
+  background: rgb(7, 41, 48);
+  background: radial-gradient(
+    circle,
+    rgb(27, 27, 27) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: 1;
+  position: relative;
+}
+
+.whitney.grad::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 41, 48);
+  background: radial-gradient(
+    circle,
+    rgb(5, 34, 41) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.goldleaf.grad::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 44, 51);
+  background: radial-gradient(
+    circle,
+    rgb(36, 30, 1) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+.nook::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 41, 48);
+  background: radial-gradient(
+    circle,
+    rgb(51, 2, 5) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.misty.grad::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 41, 48);
+  background: radial-gradient(
+    circle,
+    rgb(34, 1, 39) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.aroma.grad::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 41, 48);
+  background: radial-gradient(
+    circle,
+    rgb(1, 39, 17) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.grad:hover::before {
+  opacity: 1;
+}
+</style>
