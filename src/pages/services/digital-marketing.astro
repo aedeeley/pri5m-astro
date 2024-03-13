@@ -1,0 +1,68 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { Image } from 'astro:assets'
+import whitneyhero from '../../assets/whitney-hero.webp'
+---
+
+<BaseLayout
+  title="PRI5M Showcase"
+  description="Modern development for forward thinking individuals"
+>
+    <section
+      class="relative overflow-x-clip overflow-y-visible pb-20 pt-4 lg:pt-24"
+      data-astro-cid-pgylcmky=""
+      style="--imageMinHeight: 523px;--leftGradient: 30% 55% at 70% 45%;--rightGradient: 55% 55% at 95% 52%;"
+    >
+      <div
+        class="relative mx-auto flex max-w-6xl flex-col gap-8 px-4 text-lg lg:flex-row"
+        data-astro-cid-pgylcmky=""
+        style="--imageMinHeight: 523px;--leftGradient: 30% 55% at 70% 45%;--rightGradient: 55% 55% at 95% 52%;"
+      >
+        <div
+          class="flex shrink-0 lg:w-1/2"
+          data-astro-cid-pgylcmky=""
+          style="--imageMinHeight: 523px;--leftGradient: 30% 55% at 70% 45%;--rightGradient: 55% 55% at 95% 52%;"
+        >
+          <div class="my-auto text-white">
+            <div
+              class="mb-4 inline-block rounded-2xl bg-gray-700 px-4 py-1.5 text-sm font-light uppercase"
+            >
+              Founders: Update
+            </div>
+            <h1 class="mb-4 text-7xl font-black">
+            Digital Marketing
+            </h1>
+            <div class="mb-8 text-xl font-light">
+              Wow your investors with data-driven updates that drive engagement
+            </div>
+            <div>
+              <a
+                href="https://app.visible.vc/create-account"
+                class="text-dark rounded border bg-white text-black px-3 py-2 text-lg hover:bg-gray-300"
+              >
+                Start your free trial
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="image-wrapper flex shrink-0"
+          data-astro-cid-pgylcmky=""
+          style="--imageMinHeight: 523px;--leftGradient: 30% 55% at 70% 45%;--rightGradient: 55% 55% at 95% 52%;"
+        >
+
+        <Image src={whitneyhero} alt="Whitney Holbourn" 
+            alt=""
+            class="lg:w-1/2 rounded-2xl"
+            loading="eager"
+            data-astro-cid-pgylcmky=""
+            decoding="async"
+          />
+        </div>
+      </div>
+    </section>
+  <section
+    class="gap-6pb-40 md:py-100 container-flex grid items-center bg-white pt-10"
+  >
+  </section>
+</BaseLayout>

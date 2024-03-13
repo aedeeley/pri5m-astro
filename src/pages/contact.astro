@@ -12,7 +12,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
       <h1
         class="animate-fade text-4xl font-extrabold animate-delay-200 md:text-6xl"
       >
-        Contact Us
+        Contact <span class="fade">Prism</span>
       </h1>
         <p
           class="text-md mb-10 mt-5 max-w-[700px] animate-fade text-center text-muted-foreground animate-delay-300 md:text-lg"
@@ -36,7 +36,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
             >
               <svg
                 viewBox="0 0 24 24"
-                class="h-4 w-4 text-gray-400"
+                class="h-4 w-4 text-zinc-400"
                 astro-icon="uil:map-marker"
                 ><path
                   fill="currentColor"
@@ -49,7 +49,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
             >
               <svg
                 viewBox="0 0 24 24"
-                class="h-4 w-4 text-gray-400"
+                class="h-4 w-4 text-zinc-400"
                 astro-icon="uil:envelope"
                 ><path
                   fill="currentColor"
@@ -61,7 +61,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
             >
               <svg
                 viewBox="0 0 24 24"
-                class="h-4 w-4 text-gray-400"
+                class="h-4 w-4 text-zinc-400"
                 astro-icon="uil:phone"
                 ><path
                   fill="currentColor"
@@ -107,6 +107,18 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
                 id="email_address"
                 type="email"
                 placeholder="Email Address"
+                name="email"
+                required=""
+                class="astro-UWNXE3I2 w-full animate-fade rounded-md bg-zinc-200 px-4 py-3 outline-none animate-delay-200 placeholder:text-gray-400 focus:ring-4 dark:bg-zinc-800"
+              />
+            </div>
+            <div class="astro-UWNXE3I2 mb-5">
+              <label for="phone_number" class="astro-UWNXE3I2 sr-only"
+                >Phone Number</label
+              ><input
+                id="phone_number"
+                type="number"
+                placeholder="Phone Number"
                 name="email"
                 required=""
                 class="astro-UWNXE3I2 w-full animate-fade rounded-md bg-zinc-200 px-4 py-3 outline-none animate-delay-200 placeholder:text-gray-400 focus:ring-4 dark:bg-zinc-800"

@@ -1,0 +1,73 @@
+---
+import { Image } from 'astro:assets'
+import logo from '../assets/logo.svg'
+import { buttonVariants } from '@/components/ui/button'
+---
+
+<button
+           onclick="my_modal_2.showModal()"
+          class={buttonVariants({ variant: 'clientHeader' })}
+          ><Image
+            src={logo}
+            alt="PRI5M Logo"
+            id="site-logo"
+            class="mr-3 max-w-[24px] group-hover:animate-wiggle-more"
+          />
+          Client Login
+        </button>
+        <dialog id="my_modal_2" class="modal">
+            <div class="modal-box">
+                <h2 class="mb-10 text-center text-2xl font-bold">Client Login</h2>
+          <form
+          action=""
+          method="POST"
+          id="form"
+          class="needs-validation astro-UWNXE3I2"
+          novalidate=""
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="YOUR_ACCESS_KEY_HERE"
+            class="astro-UWNXE3I2 animate-fade animate-delay-700"
+          />
+          <input
+            type="checkbox"
+            class="astro-UWNXE3I2 hidden"
+            style="display:none"
+            name="botcheck"
+          />
+          <div class="astro-UWNXE3I2 mb-5">
+            <label for="email_address" class="astro-UWNXE3I2 sr-only"
+              >Email Address</label
+            ><input
+              id="email_address"
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              required=""
+              class="astro-UWNXE3I2 w-full animate-fade rounded-md bg-zinc-200 px-4 py-3 outline-none animate-delay-200 placeholder:text-gray-400 focus:ring-4 dark:bg-zinc-800"
+            />
+          </div>
+          <div class="astro-UWNXE3I2 mb-5">
+            <input
+              type="password"
+              placeholder="Password"
+              required=""
+              class="astro-UWNXE3I2 animate-delay-400 w-full animate-fade rounded-md bg-zinc-200 px-4 py-3 outline-none placeholder:text-gray-400 focus:ring-4 dark:bg-zinc-800"
+              name="name"
+            />
+          </div>
+          <button
+            type="submit"
+            class="astro-UWNXE3I2 w-full animate-fade rounded border-2 border-transparent bg-zinc-600 px-6 py-3 text-center text-neutral-200 ring-gray-200 ring-offset-2 transition animate-delay-700 focus-visible:ring-2 dark:bg-white dark:text-neutral-800"
+            >Login
+          </button>
+          <div id="result" class="astro-UWNXE3I2 mt-3 text-center"></div>
+        </form>
+
+            </div>
+            <form method="dialog" class="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>

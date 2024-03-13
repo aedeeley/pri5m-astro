@@ -13,4 +13,9 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
+  vite: {
+		optimizeDeps: {
+			exclude: ["oslo"]
+		}
+	}
 })
