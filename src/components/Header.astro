@@ -49,6 +49,13 @@ const currentPath = pathname.slice(1)
   <li
     class="items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
   >
+    <a href="/blog" class={currentPath === 'blog/' ? 'active' : ''}>
+      <span class="inline-block">Blog</span>
+    </a>
+  </li>
+  <li
+    class="items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 hidden sm:flex"
+  >
     <a href="/contact" class={currentPath === 'contact/' ? 'active' : ''}>
       <span class="inline-block">Contact</span>
     </a>
@@ -83,6 +90,11 @@ const currentPath = pathname.slice(1)
 <li>
   <a href="/showcase" class={currentPath === 'showcase/' ? 'active' : ''}>
     <span class="inline-block text-zinc-100 dark:text-zinc-900 hover:tex-zinc-500">Showcase</span>
+  </a>
+</li>
+<li>
+  <a href="/blog" class={currentPath === 'blog/' ? 'active' : ''}>
+    <span class="inline-block text-zinc-100 dark:text-zinc-900 hover:tex-zinc-500">Blog</span>
   </a>
 </li>
 <li>
