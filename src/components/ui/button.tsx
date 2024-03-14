@@ -17,7 +17,7 @@ const buttonVariants = cva(
           outlineintro:
           'border border-input bg-background hover:border-zinc-400 hover:dark:border-zinc-700 hover:text-accent-foreground py-7 px-5 tracking-wide transition duration-500 ease-in-out active:opacity-50 group', 
           harsh:
-          'group bg-black dark:bg-white px-5 py-7 text-[11pt] text-zinc-300 dark:text-zinc-600', 
+          'group bg-black dark:bg-white px-5 py-7 text-[11pt] text-zinc-300 dark:text-zinc-800', 
           clientHeader:
           'border border-input text-[9pt] bg-background dark:text-zinc-400 dark:hover:text-zinc-100 hover:border-black/20 dark:border-white/5 dark:hover:border-white/10 dark:bg-zinc-950/60 py-4 pl-2 pr-3 tracking-wide transition duration-500 ease-in-out active:opacity-50 group',
         secondary:
