@@ -1,7 +1,9 @@
 ---
+import BaseLayout from '@/layouts/BaseLayout.astro'
 import { getCollection } from "astro:content";
 import { Picture } from "astro:assets";
-import BaseLayout from '@/layouts/BaseLayout.astro'
+import { Image } from 'astro:assets'
+import logo from '../assets/prism-logo.svg'
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
@@ -21,13 +23,13 @@ publishedBlogEntries.sort(function (a, b) {
         <h1
           class="animate-fade text-4xl font-extrabold animate-delay-200 md:text-6xl"
         >
-        <span class="fade">Prism</span>  Blog
+        <Image
+                src={logo}
+                alt="PRI5M Logo"
+                id="site-logo"
+                class="float-left mr-5 max-w-[85px]"
+              /> <span class="fade">Prism Blog</span>
         </h1>
-        <p
-          class="text-md mb-10 mt-5 max-w-[700px] animate-fade text-center text-muted-foreground animate-delay-300 md:text-lg"
-        >
-          Our thoughts and progressions laid out in plain text and images. 
-        </p>
       </div>
     </div>
   </section>
