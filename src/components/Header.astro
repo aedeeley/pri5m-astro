@@ -150,14 +150,21 @@ const currentPath = pathname.slice(1)
               >
                 <li>
                   <a
-                    href="/process"
                     class={currentPath === 'process/' ? 'active' : ''}
                   >
                     <span
                       class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                      >Process</span
+                      >Services</span
                     >
                   </a>
+                  <ul>
+                    <li><a href="/services/app-development"
+                      class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900">App Development</a></li>
+                    <li><a href="/services/digital-marketing"
+                      class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900">Digital Marketing</a></li>
+                    <li><a href="/services/infrastructure-design"
+                      class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900">Infrastructure Design</a></li>
+                  </ul>
                 </li>
                 <li>
                   <a
