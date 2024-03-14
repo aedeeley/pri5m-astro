@@ -27,7 +27,7 @@ publishedBlogEntries.sort(function (a, b) {
                 src={logo}
                 alt="PRI5M Logo"
                 id="site-logo"
-                class="float-left mr-5 max-w-[85px]"
+                class="float-left mr-5 mt-[3px] max-w-[75px]"
               /> <span class="fade">Prism</span> Blog
         </h1>
       </div>
@@ -38,7 +38,7 @@ publishedBlogEntries.sort(function (a, b) {
       <ul class="grid gap-16 max-w-5xl mx-auto">
         {
           publishedBlogEntries.map((blogPostEntry, index) => (
-            <li>
+            <li class="animate-fade-up duration-500">
               <a href={`/blog/${blogPostEntry.slug}`}>
                 <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                   <Picture
