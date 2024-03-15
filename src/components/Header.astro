@@ -1,6 +1,5 @@
 ---
 import { buttonVariants } from '@/components/ui/button'
-import Nav from '@/components/Nav.astro'
 import ThemeToggle from '@/components/ThemeToggle.astro'
 import Social from '@/components/Social.astro'
 import ClientLogin from '@/components/ClientLogin.astro'
@@ -246,20 +245,20 @@ const currentPath = pathname.slice(1)
                     >
                   </a>
                 </li>
+                <li>
+                  <button
+                    onclick="my_modal_2.showModal()"
+                    class={buttonVariants({ variant: 'clientHeader' })}
+                    ><Image
+                      src={logo}
+                      alt="PRI5M Logo"
+                      id="site-logo"
+                      class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
+                    />
+                    Client Login
+                  </button>
+                </li>
               </ul>
-              <li>
-                <button
-                  onclick="my_modal_2.showModal()"
-                  class={buttonVariants({ variant: 'clientHeader' })}
-                  ><Image
-                    src={logo}
-                    alt="PRI5M Logo"
-                    id="site-logo"
-                    class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
-                  />
-                  Client Login
-                </button>
-              </li>
             </details>
           </span>
         </div>
