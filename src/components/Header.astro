@@ -143,10 +143,10 @@ const currentPath = pathname.slice(1)
       <nav class="animation-1000 flex items-center gap-3 space-x-1">
         <Social />
         <div><ThemeToggle /></div>
-        <div class="hidden md:block"><ClientLogin /></div>
+        <div><ClientLogin /></div>
 
         <div
-          class="flex hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 sm:hidden md:hidden lg:hidden xl:hidden"
+          class="flex hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 md:hidden lg:hidden xl:hidden"
         >
           <span class="inline-block">
             <details class="dropdown dropdown-end dropdown-bottom">
@@ -213,6 +213,20 @@ const currentPath = pathname.slice(1)
                     >
                   </a>
                 </li>
+              </li>
+              <li>
+                <button
+                  onclick="my_modal_2.showModal()"
+                  class={buttonVariants({ variant: 'clientHeader' })}
+                  ><Image
+                    src={logo}
+                    alt="PRI5M Logo"
+                    id="site-logo"
+                    class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
+                  />
+                  Client Login
+                </button>
+              </li>
               </ul>
             </details>
           </span>
@@ -221,6 +235,8 @@ const currentPath = pathname.slice(1)
     </div>
   </div>
 </header>
+
+
 
 <style>
 

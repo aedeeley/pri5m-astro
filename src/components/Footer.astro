@@ -1,22 +1,62 @@
-<footer
-  class="border-t border-neutral-100 py-6 dark:border-neutral-800 md:px-8 md:py-0"
->
-  <div
-    class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row"
-  ><div class="align-left">
-    <p
-      class="text-center text-sm leading-loose text-muted-foreground md:text-left"
-    >
-      Made with ❤
-  </div>
-      <div class="align-right text-sm text-zinc-800 dark:text-zinc-500">
-        <a
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-          target="_blank"
-          class="text-zinc-200">CC BY-NC-SA 4.0</a
-        >
-         2023 © PRI5M.COM
+---
+import { Image } from 'astro:assets'
+import logo from '../assets/prism-logo.svg'
+---
+
+<footer class="footer py-20 bg-zinc-100 dark:bg-zinc-800 text-base-content text-base leading-7">
+  <div class="container grid grid-flow-col">
+  <nav class="grid-flow-row gap-2 hidden lg:grid">
+    <h6 class="footer-title font-normal tracking-wide text-sm">Services</h6> 
+    <a href="/services/branding-design" class="link link-hover">Branding Design</a>
+    <a href="/services/app-development" class="link link-hover">App Development</a>
+    <a href="/services/digital-marketing" class="link link-hover">Digital Marketing</a>
+    <a href="/services/infrastructure-design" class="link link-hover">Infrastructure Design</a>
+  </nav> 
+  <nav class="grid-flow-row gap-2 hidden lg:grid">
+    <h6 class="footer-title font-normal tracking-wide text-sm">Company</h6> 
+    <a href="/showcase" class="link link-hover">Showcase</a>
+    <a href="/about-us" class="link link-hover">About us</a>
+    <a href="/blog" class="link link-hover">Blog</a>
+    <a href="/contact" class="link link-hover">Contact</a>
+  </nav> 
+  <nav class="grid-flow-row gap-2 hidden lg:grid">
+    <h6 class="footer-title font-normal tracking-wide text-sm">Legal</h6> 
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav> 
+  <form>
+    <h6 class="footer-title font-normal tracking-wide text-sm">Newsletter</h6> 
+    <fieldset class="form-control w-80">
+      <label class="label">
+        <span class="label-text">Enter your email address</span>
+      </label> 
+      <div class="join">
+        <input type="text" placeholder="username@site.com" class="input border-none join-item bg-zinc-200 dark:bg-zinc-900" /> 
+        <button class="btn btn-primary join-item border-none bg-zinc-300 dark:bg-zinc-300 hover:bg-zinc-400 dark:hover:bg-zinc-100">Subscribe</button>
       </div>
-    </p>
-  </div>
+    </fieldset>
+  </form>
+</footer>
+  
+</footer>
+<footer class="footer items-center p-4 bg-zinc-100 dark:bg-zinc-800 text-neutral-content">
+<div class="container footer items-center p-4 text-neutral-content">
+  <aside class="items-center grid-flow-col">
+    
+    <p><Image
+      src={logo}
+      alt="PRI5M Logo"
+      id="site-logo"
+      class="mr-3 max-w-[24px] float-left"
+    /> pri5m.com &copy; 2024. All rights reserved.</p>
+  </aside> 
+  <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+    <a
+      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      target="_blank"
+      class="text-zinc-200">CC BY-NC-SA 4.0</a
+    >
+  </nav>
+</div>
 </footer>
