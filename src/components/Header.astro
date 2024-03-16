@@ -23,6 +23,7 @@ const currentPath = pathname.slice(1)
           <a
             href="/"
             class="group mt-[3px] flex items-center space-x-2 active:opacity-80"
+            data-astro-prefetch
           >
             <span class="inline-block"
               ><Image
@@ -56,6 +57,7 @@ const currentPath = pathname.slice(1)
                   href="/services/brand-design"
                   class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
                   aria-current=""
+                  data-astro-prefetch
                   ><i class="fa-solid fa-marker mt-1 text-2xl"></i>
                   <div class="ml-4">
                     <span
@@ -71,6 +73,7 @@ const currentPath = pathname.slice(1)
                   href="/services/app-development"
                   class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
                   aria-current=""
+                  data-astro-prefetch
                   ><i class="fa-regular fa-file-code mt-1 text-2xl"></i>
                   <div class="ml-4">
                     <span
@@ -84,6 +87,7 @@ const currentPath = pathname.slice(1)
                   </div></a
                 ><a
                   href="/services/digital-marketing"
+                  data-astro-prefetch
                   class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
                   aria-current=""
                   ><i class="fa-solid fa-chart-simple mt-1 text-2xl"></i><div
@@ -100,6 +104,7 @@ const currentPath = pathname.slice(1)
                   </div></a
                 ><a
                   href="/services/infrastructure-design"
+                  data-astro-prefetch
                   class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
                   aria-current=""
                   ><i class="fa-solid fa-server mt-1 text-2xl"></i><div
@@ -124,6 +129,7 @@ const currentPath = pathname.slice(1)
         >
           <a
             href="/showcase"
+            data-astro-prefetch
             class={currentPath === 'showcase/' ? 'active' : ''}
           >
             <span
@@ -135,7 +141,11 @@ const currentPath = pathname.slice(1)
         <li
           class="hidden items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 md:flex"
         >
-          <a href="/blog" class={currentPath === 'blog/' ? 'active' : ''}>
+          <a
+            href="/blog"
+            data-astro-prefetch
+            class={currentPath === 'blog/' ? 'active' : ''}
+          >
             <span
               class="inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
               >Blog</span
@@ -145,7 +155,11 @@ const currentPath = pathname.slice(1)
         <li
           class="hidden items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 md:flex"
         >
-          <a href="/contact" class={currentPath === 'contact/' ? 'active' : ''}>
+          <a
+            href="/contact"
+            data-astro-prefetch
+            class={currentPath === 'contact/' ? 'active' : ''}
+          >
             <span
               class="inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
               >Contact</span
@@ -178,6 +192,7 @@ const currentPath = pathname.slice(1)
                 <li>
                   <a
                     href="/services"
+                    data-astro-prefetch
                     class={currentPath === 'process/' ? 'active' : ''}
                   >
                     <span
@@ -189,32 +204,41 @@ const currentPath = pathname.slice(1)
                     <li>
                       <a
                         href="/services/brand-design"
+                        data-astro-prefetch
                         class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                        >Brand Design</a>
+                        >Brand Design</a
+                      >
                     </li>
                     <li>
                       <a
                         href="/services/app-development"
+                        data-astro-prefetch
                         class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                        >App Development</a>
+                        >App Development</a
+                      >
                     </li>
                     <li>
                       <a
                         href="/services/digital-marketing"
+                        data-astro-prefetch
                         class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                        >Digital Marketing</a>
+                        >Digital Marketing</a
+                      >
                     </li>
                     <li>
                       <a
                         href="/services/infrastructure-design"
+                        data-astro-prefetch
                         class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                        >Infrastructure Design</a>
+                        >Infrastructure Design</a
+                      >
                     </li>
                   </ul>
                 </li>
                 <li>
                   <a
                     href="/showcase"
+                    data-astro-prefetch
                     class={currentPath === 'showcase/' ? 'active' : ''}
                   >
                     <span
@@ -226,6 +250,7 @@ const currentPath = pathname.slice(1)
                 <li>
                   <a
                     href="/blog"
+                    data-astro-prefetch
                     class={currentPath === 'blog/' ? 'active' : ''}
                   >
                     <span
@@ -237,6 +262,7 @@ const currentPath = pathname.slice(1)
                 <li>
                   <a
                     href="/contact"
+                    data-astro-prefetch
                     class={currentPath === 'contact/' ? 'active' : ''}
                   >
                     <span

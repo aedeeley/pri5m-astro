@@ -5,6 +5,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { Image } from 'astro:assets'
 import logo from '../assets/prism-logo.svg'
 import misty from '../assets/misty.webp'
+import dashboard from '../assets/dashboard.webp'
 import '../assets/fontawesome/css/all.min.css'
 ---
 
@@ -14,7 +15,7 @@ import '../assets/fontawesome/css/all.min.css'
 >
   <div class="fade-bg -mt-20">
     <section
-      class="gap-6pb-40 container grid items-center pt-40 max-[600px]:pt-20"
+      class="gap-6pb-40 container grid items-center pt-20 pb-[100px] "
     >
       <div class="pb-40 pt-20">
         <div class="flex flex-col items-center gap-2 text-center">
@@ -59,6 +60,15 @@ import '../assets/fontawesome/css/all.min.css'
     </section>
   </div>
 
+  <section id="browser" class="container">
+    <Image
+    src={misty}
+    alt="PRI5M Logo"
+    id="site-logo"
+    class="w-[900px] mx-auto -mt-[160px] rounded-xl shadow-2xl"
+  />
+  </section>
+
   <section id="strategy" class="container mb-40">
     <div class="pt-32 md:pt-44" id="solution">
       <div class="mx-auto max-w-6xl">
@@ -71,7 +81,7 @@ import '../assets/fontawesome/css/all.min.css'
                 <div class="input">www.mistyrobotics.com</div>
               </div>
               <div class="flex justify-center">
-                <Image src={misty} alt="Misty Robotics" />
+                <Image src={dashboard} alt="Misty Robotics" />
               </div>
             </div>
           </div>
