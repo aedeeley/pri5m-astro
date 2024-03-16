@@ -61,31 +61,39 @@ import '../assets/fontawesome/css/all.min.css'
   </div>
 
   <section id="browser" class="container">
-    <Image
-    src={misty}
-    alt="PRI5M Logo"
-    id="site-logo"
-    class="w-[900px] mx-auto -mt-[160px] rounded-xl shadow-2xl"
-  />
+    
+    <div class="mockup-browser border dark:bg-base-300/20 text-zinc-500 -mt-[160px] rounded-xl shadow-2xl">
+      <div class="mockup-browser-toolbar">
+        <div class="input">mistyrobotics.com</div>
+      </div>
+      <div class="flex justify-center">
+        <Image src={dashboard} alt="Misty Robotics" />
+      </div>
+    </div>
+  </div>
   </section>
 
   <section id="strategy" class="container mb-40">
-    <div class="pt-32 md:pt-44" id="solution">
+    <div class="md:pt-44" id="solution">
       <div class="mx-auto max-w-6xl">
         <div
           class="animate-fade-up flex-row-reverse items-center justify-between space-y-12 text-zinc-800 animate-delay-300 animate-duration-[800ms] md:flex md:gap-3 lg:gap-5 lg:space-y-0"
         >
           <div class="relative ml-auto h-full md:w-1/2">
-            <div class="mockup-browser border dark:bg-base-300 text-zinc-500">
-              <div class="mockup-browser-toolbar">
-                <div class="input">www.mistyrobotics.com</div>
-              </div>
-              <div class="flex justify-center">
-                <Image src={dashboard} alt="Misty Robotics" />
-              </div>
+            <div class="mockup-code">
+              <pre><code></code></pre> 
+              <pre class="text-warning"><code>from app.models.Post import Post</code></pre> 
+              <pre class="text-warning"><code>from masonite.request import Reques</code></pre> 
+              <pre class="text-warning"><code>from masonite.views import Vie</code></pre> 
+              <pre class="text-warning"><code>...</code></pre> 
+              <pre><code></code></pre> 
+              <pre><code>def single(self, view: View, request: Request):</code></pre> 
+              <pre><code>post = Post.find(request.param('id'))</code></pre> 
+              <pre><code></code></pre> 
+              <pre class="text-success"><code> return view.render('single', ('post': post))</code></pre>
+              <pre><code></code></pre> 
             </div>
           </div>
-
           <div class="md:w-1/2 lg:w-[40%]">
             <h2
               class="animate-fade text-3xl font-medium text-zinc-900 animate-delay-500 animate-duration-1000 dark:text-white md:text-4xl lg:text-5xl"
@@ -459,5 +467,9 @@ import '../assets/fontawesome/css/all.min.css'
 #industry-list .fa-caret-right {
   font-size: 7pt;
   vertical-align: middle;
+}
+
+.mockup-browser .mockup-browser-toolbar .input {
+  background-color:rgba(0,0,0,0.1) !important;
 }
 </style>
