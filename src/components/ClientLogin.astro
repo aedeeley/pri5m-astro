@@ -11,7 +11,7 @@ import { buttonVariants } from '@/components/ui/button'
     ><Image
       src={logo}
       alt="PRI5M Logo"
-      id="site-logo"
+      id="site-logo" loading="eager"
       class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
     />
     Client Login
@@ -22,7 +22,7 @@ import { buttonVariants } from '@/components/ui/button'
     <div class="mb-10 text-xl font-bold">
       <Image
         src={logo}
-        alt="PRI5M Logo"
+        alt="PRI5M Logo" loading="eager"
         class="float-left mr-3 mt-[3px] max-w-[30px]"
       /> Client Login
     </div>
@@ -75,7 +75,7 @@ import { buttonVariants } from '@/components/ui/button'
     </form>
 
     <div class="text-center">
-      <a href="#" class="text-sm">Forgot Password?</a>
+      <a href="/" class="text-sm">Forgot Password?</a>
     </div>
   </div>
   <form method="dialog" class="modal-backdrop">

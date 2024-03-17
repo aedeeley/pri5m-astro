@@ -29,7 +29,7 @@ const currentPath = pathname.slice(1)
               ><Image
                 src={logo}
                 alt="PRI5M Logo"
-                id="site-logo"
+                id="site-logo" loading="eager"
                 class="float-left max-w-[32px] group-hover:animate-pulse max-[600px]:max-w-[28px]"
               /></span
             ><div class="text-sm font-bold text-zinc-800 dark:text-white">
@@ -49,15 +49,13 @@ const currentPath = pathname.slice(1)
               ></i></summary
             >
             <ul
-              tabindex="0"
               class="menu dropdown-content z-[1] mt-2 w-80 rounded-lg bg-white/95 shadow dark:bg-zinc-950/95"
             >
               <div class="relative grid gap-5 px-4 py-5 sm:gap-6 sm:p-6">
                 <a
                   href="/services/brand-design"
                   class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
-                  aria-current=""
-                  data-astro-prefetch
+                  data-astro-prefetch aria-label="Brand Design"
                   ><i class="fa-solid fa-marker mt-1 text-2xl"></i>
                   <div class="ml-4">
                     <span
@@ -72,7 +70,7 @@ const currentPath = pathname.slice(1)
                 ><a
                   href="/services/app-development"
                   class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
-                  aria-current=""
+                 aria-label="App Development"
                   data-astro-prefetch
                   ><i class="fa-regular fa-file-code mt-1 text-2xl"></i>
                   <div class="ml-4">
@@ -87,7 +85,7 @@ const currentPath = pathname.slice(1)
                   </div></a
                 ><a
                   href="/services/digital-marketing"
-                  data-astro-prefetch
+                  data-astro-prefetch aria-label="Digital Marketing"
                   class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
                   aria-current=""
                   ><i class="fa-solid fa-chart-simple mt-1 text-2xl"></i><div
@@ -104,7 +102,7 @@ const currentPath = pathname.slice(1)
                   </div></a
                 ><a
                   href="/services/infrastructure-design"
-                  data-astro-prefetch
+                  data-astro-prefetch aria-label="Infrastructure Design"
                   class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
                   aria-current=""
                   ><i class="fa-solid fa-server mt-1 text-2xl"></i><div
