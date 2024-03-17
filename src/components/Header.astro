@@ -133,9 +133,9 @@ const currentPath = pathname.slice(1)
             class={currentPath === 'showcase/' ? 'active' : ''}
           >
             <span
-              class="inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
-              >Showcase</span
-            >
+              class="float-left inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
+              >Showcase </span
+            ><span class="float-left bg-purple-900 text-purple-300 rounded h-4 w-7 text-[7pt] flex items-center justify-center ml-2">NEW</span>
           </a>
         </li>
         <li
@@ -270,19 +270,6 @@ const currentPath = pathname.slice(1)
                       >Contact</span
                     >
                   </a>
-                </li>
-                <li>
-                  <button
-                    onclick="my_modal_2.showModal()"
-                    class={buttonVariants({ variant: 'clientHeader' })}
-                    ><Image
-                      src={logo}
-                      alt="PRI5M Logo"
-                      id="site-logo"
-                      class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
-                    />
-                    Client Login
-                  </button>
                 </li>
               </ul>
             </details>
