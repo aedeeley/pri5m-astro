@@ -5,7 +5,6 @@ import { buttonVariants } from '@/components/ui/button'
 import { Image } from 'astro:assets'
 import logo from '../assets/prism-logo.svg'
 import misty from '../assets/misty.webp'
-import dashboard from '../assets/dashboard.webp'
 import '../assets/fontawesome/css/all.min.css'
 ---
 
@@ -15,12 +14,12 @@ import '../assets/fontawesome/css/all.min.css'
 >
   <div class="fade-bg -mt-20">
     <section
-      class="gap-6pb-40 container grid items-center pt-20 pb-[100px] "
+      class="gap-6pb-40 container grid items-center pt-40 max-[600px]:pt-20"
     >
       <div class="pb-40 pt-20">
         <div class="flex flex-col items-center gap-2 text-center">
           <h1
-            class="max-w-[900px] text-4xl font-medium animate-fade animate-delay-200 md:text-6xl"
+            class="max-w-[900px] animate-fade text-4xl font-extrabold animate-delay-200 md:text-6xl"
           >
             <span class="fade">Prism</span> delivers unforgettable marketing experiences
           </h1>
@@ -60,88 +59,71 @@ import '../assets/fontawesome/css/all.min.css'
     </section>
   </div>
 
-  <section id="browser" class="container">
-    
-    <div class="mockup-browser border dark:bg-base-300/20 text-zinc-500 -mt-[160px] rounded-xl shadow-2xl">
-      <div class="mockup-browser-toolbar">
-        <div class="input">mistyrobotics.com</div>
-      </div>
-      <div class="flex justify-center">
-        <Image src={dashboard} alt="Misty Robotics" />
-      </div>
-    </div>
-  </div>
-  </section>
-
   <section id="strategy" class="container mb-40">
-    <div class="md:pt-44" id="solution">
+    <div class="pt-32 md:pt-44" id="solution">
       <div class="mx-auto max-w-6xl">
         <div
-          class="animate-fade-up flex-row-reverse items-center justify-between space-y-12 text-zinc-800 animate-delay-300 animate-duration-[800ms] md:flex md:gap-3 lg:gap-5 lg:space-y-0"
+          class="animate-fade-up flex-row-reverse items-center justify-between space-y-12 text-gray-600 animate-delay-300 animate-duration-[800ms] md:flex md:gap-3 lg:gap-5 lg:space-y-0"
         >
           <div class="relative ml-auto h-full md:w-1/2">
-            <div class="mockup-code">
-              <pre><code></code></pre> 
-              <pre class="text-warning"><code>from app.models.Post import Post</code></pre> 
-              <pre class="text-warning"><code>from masonite.request import Reques</code></pre> 
-              <pre class="text-warning"><code>from masonite.views import Vie</code></pre> 
-              <pre class="text-warning"><code>...</code></pre> 
-              <pre><code></code></pre> 
-              <pre><code>def single(self, view: View, request: Request):</code></pre> 
-              <pre><code>post = Post.find(request.param('id'))</code></pre> 
-              <pre><code></code></pre> 
-              <pre class="text-success"><code> return view.render('single', ('post': post))</code></pre>
-              <pre><code></code></pre> 
+            <div class="mockup-browser border dark:bg-base-300">
+              <div class="mockup-browser-toolbar">
+                <div class="input">www.mistyrobotics.com</div>
+              </div>
+              <div class="flex justify-center">
+                <Image src={misty} alt="Misty Robotics" />
+              </div>
             </div>
           </div>
+
           <div class="md:w-1/2 lg:w-[40%]">
             <h2
-              class="animate-fade text-3xl font-medium text-zinc-900 animate-delay-500 animate-duration-1000 dark:text-white md:text-4xl lg:text-5xl"
+              class="animate-fade text-3xl font-bold text-gray-900 animate-delay-500 animate-duration-1000 dark:text-white md:text-4xl lg:text-5xl"
             >
               <span class="fade">Prism</span> has industry expertise
             </h2>
             <p
-              class="mb-5 mt-5 animate-fade text-zinc-800 animate-delay-500 animate-duration-1000 dark:text-zinc-300"
+              class="mb-5 mt-5 animate-fade text-gray-600 animate-delay-500 animate-duration-1000 dark:text-gray-300"
             >
               Prism has over <em>2 decades</em> of marketing experience under our
               belt. We've had the opportunity to provide for over 500 clients in
               a variety of industries, including:
             </p>
             <div
-              class="grid-col-2 sm:grid-col-1 text-md grid grid-flow-col leading-7 text-zinc-500"
+              class="grid-col-2 sm:grid-col-1 text-md grid grid-flow-col leading-7 text-gray-500"
               id="industry-list"
             >
               <div>
                 <ul>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Healthcare
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Finance
                   </li>
                   
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Education
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Legal
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Real Estate
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Robotics
                   </li>
                 </ul>
@@ -149,32 +131,32 @@ import '../assets/fontawesome/css/all.min.css'
               <div>
                 <ul><li>
                   <i
-                    class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                    class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                   ></i> Technology
                 </li>
                 <li>
                   <i
-                    class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                    class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                   ></i> Manufacturing
                 </li>
                 <li>
                   <i
-                    class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                    class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                   ></i> Non-Profit
                 </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Health & Wellness
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Food & Beverage
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Entertainment
                   </li>
                 </ul>
@@ -186,27 +168,29 @@ import '../assets/fontawesome/css/all.min.css'
         <a
           href="#technology"
           rel="noreferrer"
-          class={buttonVariants({ variant: 'harsh' })}
-          ><i class="fa-solid fa-microchip mr-3 text-xl group-hover:animate-wiggle-more text-zinc-200 dark:text-zinc-800"></i> 
-          Check out our tech
+          class={buttonVariants({ variant: 'outlineintro' })}
+          >
+          Check out our tech <i
+          class="fa-solid fa-angle-down ml-4 text-sm group-hover:animate-ping text-black dark:text-zinc-500"
+        ></i>
         </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-    <section class="container-mx mb-20  bg-zinc-100 md:pb-40">
+    <section class="container-mx mb-20 bg-zinc-100 md:pb-40">
       <div
         class="mx-auto max-w-7xl items-center px-8 py-40 md:px-12 lg:px-16 xl:px-24" id="technology"
       >
         <div class="max-w-lg">
           <h2
-            class="text-3xl font-medium tracking-tighter text-zinc-900 lg:text-5xl"
+            class="text-3xl font-semibold tracking-tighter text-gray-900 lg:text-5xl"
           >
             <span class="fade">Prism</span> has a diverse technology stack
           </h2>
           <p
-              class="mb-5 mt-5 animate-fade animate-delay-500 animate-duration-1000 text-zinc-800"
+              class="mb-5 mt-5 animate-fade animate-delay-500 animate-duration-1000 text-gray-600"
             >
             We're here to tackle your technology and marketing problems. To do so, we're always up to date on the latest + greatest technologies, so you can focus on what you need to!
             </p>
@@ -231,7 +215,7 @@ import '../assets/fontawesome/css/all.min.css'
               >
                 Ready to get started with Spaziobianco?
               </h2>
-              <p class="mt-5 text-zinc-400">
+              <p class="mt-5 text-slate-400">
                 Receive dividends bull investment mutual funds rise federal
                 funds strategy substantially treasury municipal public index
                 funds.
@@ -272,7 +256,7 @@ import '../assets/fontawesome/css/all.min.css'
                           Supervised deployments
                         </p>
                       </div>
-                      <p class="text-sm text-zinc-400">
+                      <p class="text-sm text-slate-400">
                         Debt bills lucrative capitalization municipal bonds
                         government.
                       </p>
@@ -283,7 +267,7 @@ import '../assets/fontawesome/css/all.min.css'
                       <div>
                         <p class="font-semibold text-white">Conect your SaaS</p>
                       </div>
-                      <p class="text-sm text-zinc-400">
+                      <p class="text-sm text-slate-400">
                         Debt bills lucrative capitalization municipal bonds
                         government.
                       </p>
@@ -294,7 +278,7 @@ import '../assets/fontawesome/css/all.min.css'
                       <div>
                         <p class="font-semibold text-white">Databse ready</p>
                       </div>
-                      <p class="text-sm text-zinc-400">
+                      <p class="text-sm text-slate-400">
                         Debt bills lucrative capitalization municipal bonds
                         government.
                       </p>
@@ -305,7 +289,7 @@ import '../assets/fontawesome/css/all.min.css'
                       <div>
                         <p class="font-semibold text-white">Deployments</p>
                       </div>
-                      <p class="text-sm text-zinc-400">
+                      <p class="text-sm text-slate-400">
                         Debt bills lucrative capitalization municipal bonds
                         government.
                       </p>
@@ -323,11 +307,11 @@ import '../assets/fontawesome/css/all.min.css'
       <div class="mb-20 flex flex-col gap-12 md:my-32 lg:flex-row">
         <div class="text-center lg:w-5/12 lg:pl-12 lg:text-left">
           <h2
-            class="text-2xl font-bold text-zinc-800 dark:text-white md:text-3xl lg:text-4xl"
+            class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl lg:text-4xl"
           >
             Frequently Asked Questions
           </h2>
-          <p class="mt-4 text-zinc-800 dark:text-zinc-300">
+          <p class="mt-4 text-gray-600 dark:text-gray-300">
             piente optio repellendus atque illum odio! Fugiat at expedita
             deserunt dolorum molestias.
           </p>
@@ -337,7 +321,7 @@ import '../assets/fontawesome/css/all.min.css'
           class="divide-y divide-gray-200 border-gray-200 dark:divide-gray-800 dark:border-gray-800 lg:w-7/12"
         >
           <div
-            class="collapse collapse-arrow rounded-none rounded-b-lg rounded-t-lg  bg-zinc-100 dark:bg-zinc-800"
+            class="collapse collapse-arrow rounded-none rounded-b-lg rounded-t-lg bg-gray-100 dark:bg-zinc-800"
           >
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div
@@ -362,7 +346,7 @@ import '../assets/fontawesome/css/all.min.css'
               </p>
             </div>
             <div
-              class="collapse collapse-arrow rounded-none bg-zinc-100 dark:bg-zinc-800"
+              class="collapse collapse-arrow rounded-none bg-gray-100 dark:bg-zinc-800"
             >
               <input type="radio" name="my-accordion-2" />
               <div
@@ -386,7 +370,7 @@ import '../assets/fontawesome/css/all.min.css'
                 </p>
               </div>
               <div
-                class="collapse collapse-arrow rounded-none bg-zinc-100 dark:bg-zinc-800"
+                class="collapse collapse-arrow rounded-none bg-gray-100 dark:bg-zinc-800"
               >
                 <input type="radio" name="my-accordion-2" />
                 <div
@@ -420,10 +404,10 @@ import '../assets/fontawesome/css/all.min.css'
                   </p>
                 </div>
               </div>
-              <div class="collapse collapse-arrow  bg-zinc-100 dark:bg-zinc-800">
+              <div class="collapse collapse-arrow bg-zinc-100 dark:bg-zinc-800">
                 <input type="radio" name="my-accordion-2" />
                 <div
-                  class="collapse-title text-lg font-bold text-zinc-800 dark:text-zinc-200"
+                  class="collapse-title text-lg font-bold text-gray-800 dark:text-zinc-200"
                 >
                   Click to open this one and close others
                 </div>
@@ -464,12 +448,8 @@ import '../assets/fontawesome/css/all.min.css'
     );
   }
   
-#industry-list .fa-caret-right {
+#industry-list .fa-arrow-right {
   font-size: 7pt;
   vertical-align: middle;
-}
-
-.mockup-browser .mockup-browser-toolbar .input {
-  background-color:rgba(0,0,0,0.1) !important;
 }
 </style>
