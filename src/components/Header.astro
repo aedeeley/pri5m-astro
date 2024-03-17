@@ -1,5 +1,6 @@
 ---
 import { buttonVariants } from '@/components/ui/button'
+import Nav from '@/components/Nav.astro'
 import ThemeToggle from '@/components/ThemeToggle.astro'
 import Social from '@/components/Social.astro'
 import ClientLogin from '@/components/ClientLogin.astro'
@@ -20,20 +21,16 @@ const currentPath = pathname.slice(1)
     >
       <ul id="nav" class="flex list-none gap-4 md:gap-6">
         <li>
-          <a
-            href="/"
-            class="group mt-[3px] flex items-center space-x-2 active:opacity-80"
-            data-astro-prefetch
-          >
+          <a href="/" class="flex mt-[3px] items-center space-x-2 active:opacity-80 group">
             <span class="inline-block"
               ><Image
                 src={logo}
                 alt="PRI5M Logo"
                 id="site-logo"
-                class="float-left max-w-[32px] group-hover:animate-pulse max-[600px]:max-w-[28px]"
+                class="float-left max-w-[32px] max-[600px]:max-w-[28px] group-hover:animate-pulse"
               /></span
             ><div class="text-sm font-bold text-zinc-800 dark:text-white">
-              Prism
+             Prism
             </div>
           </a>
         </li>
@@ -45,77 +42,60 @@ const currentPath = pathname.slice(1)
               role="button"
               class={currentPath === 'services/' ? 'active' : ''}
               >Services <i
-                class="fa-solid fa-chevron-down align-text-middle m-0 p-0 text-[10px]"
+                class="fa-solid fa-chevron-down align-text-middle p-0 m-0 text-[10px]"
               ></i></summary
             >
             <ul
               tabindex="0"
-              class="menu dropdown-content z-[1] mt-2 w-80 rounded-lg bg-white/95 shadow dark:bg-zinc-950/95"
+              class="menu dropdown-content z-[1] mt-2 w-80 rounded-lg bg-white/95 dark:bg-zinc-950/95 shadow"
             >
               <div class="relative grid gap-5 px-4 py-5 sm:gap-6 sm:p-6">
                 <a
                   href="/services/brand-design"
-                  class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
+                  class="-m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900 group"
                   aria-current=""
-                  data-astro-prefetch
-                  ><i class="fa-solid fa-marker mt-1 text-2xl"></i>
+                  ><i class="fa-solid fa-marker text-2xl mt-1"></i>
                   <div class="ml-4">
                     <span
                       class="border-b-0 border-transparent text-base font-semibold text-stone-900 dark:text-stone-300 group-hover:dark:text-stone-100"
                       >Brand Design</span
-                    ><p
-                      class="mt-1 text-sm group-hover:text-stone-800 group-hover:dark:text-stone-300"
-                    >
+                    ><p class="mt-1 text-sm group-hover:text-stone-800 group-hover:dark:text-stone-300">
                       Memorable, impactful + timeless branding
                     </p>
-                  </div></a
-                ><a
+                  </div></a><a
                   href="/services/app-development"
-                  class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
+                  class="-m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900 group"
                   aria-current=""
-                  data-astro-prefetch
-                  ><i class="fa-regular fa-file-code mt-1 text-2xl"></i>
+                  ><i class="fa-regular fa-file-code text-2xl mt-1"></i>
                   <div class="ml-4">
                     <span
                       class="border-b-0 border-transparent text-base font-semibold text-stone-900 dark:text-stone-300 group-hover:dark:text-stone-100"
                       >App Development</span
-                    ><p
-                      class="mt-1 text-sm group-hover:text-stone-800 group-hover:dark:text-stone-300"
-                    >
+                    ><p class="mt-1 text-sm group-hover:text-stone-800 group-hover:dark:text-stone-300">
                       Solutions to enhance + grow your business
                     </p>
                   </div></a
                 ><a
                   href="/services/digital-marketing"
-                  data-astro-prefetch
-                  class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
+                  class="-m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900 group"
                   aria-current=""
-                  ><i class="fa-solid fa-chart-simple mt-1 text-2xl"></i><div
-                    class="ml-4"
-                  >
+                  ><i class="fa-solid fa-chart-simple text-2xl mt-1"></i><div class="ml-4">
                     <span
                       class="border-b-0 border-transparent text-base font-semibold text-stone-900 dark:text-stone-300 group-hover:dark:text-stone-100"
                       >Digital Marketing</span
-                    ><p
-                      class="mt-1 text-sm group-hover:text-stone-800 group-hover:dark:text-stone-300"
-                    >
+                    ><p class="mt-1 text-sm group-hover:text-stone-800 group-hover:dark:text-stone-300">
                       Tactics to target + reach your audience effectively
                     </p>
                   </div></a
                 ><a
                   href="/services/infrastructure-design"
-                  data-astro-prefetch
-                  class="group -m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900"
+                  class="-m-3 flex items-start rounded-lg p-3 hover:bg-stone-100 dark:hover:bg-zinc-900 group"
                   aria-current=""
-                  ><i class="fa-solid fa-server mt-1 text-2xl"></i><div
-                    class="ml-4"
-                  >
+                  ><i class="fa-solid fa-server text-2xl mt-1"></i><div class="ml-4">
                     <span
                       class="border-b-0 border-transparent text-base font-semibold text-stone-900 dark:text-stone-300 group-hover:dark:text-stone-100"
                       >Infrastructure Design</span
-                    ><p
-                      class="mt-1 text-sm group-hover:text-stone-800 group-hover:dark:text-stone-300"
-                    >
+                    ><p class="mt-1 text-sm group-hover:text-stone-800 group-hover:dark:text-stone-300">
                       Reliable, scalable + secure solutions
                     </p>
                   </div></a
@@ -129,23 +109,18 @@ const currentPath = pathname.slice(1)
         >
           <a
             href="/showcase"
-            data-astro-prefetch
             class={currentPath === 'showcase/' ? 'active' : ''}
           >
             <span
-              class="float-left inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
-              >Showcase </span
-            ><span class="float-left bg-purple-900 text-purple-300 rounded h-4 w-7 text-[7pt] flex items-center justify-center ml-2">NEW</span>
+              class="inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
+              >Showcase</span
+            >
           </a>
         </li>
         <li
           class="hidden items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 md:flex"
         >
-          <a
-            href="/blog"
-            data-astro-prefetch
-            class={currentPath === 'blog/' ? 'active' : ''}
-          >
+          <a href="/blog" class={currentPath === 'blog/' ? 'active' : ''}>
             <span
               class="inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
               >Blog</span
@@ -155,11 +130,7 @@ const currentPath = pathname.slice(1)
         <li
           class="hidden items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 md:flex"
         >
-          <a
-            href="/contact"
-            data-astro-prefetch
-            class={currentPath === 'contact/' ? 'active' : ''}
-          >
+          <a href="/contact" class={currentPath === 'contact/' ? 'active' : ''}>
             <span
               class="inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
               >Contact</span
@@ -172,17 +143,17 @@ const currentPath = pathname.slice(1)
       <nav class="animation-1000 flex items-center gap-3 space-x-1">
         <Social />
         <div><ThemeToggle /></div>
-        <div><ClientLogin /></div>
+        <div class="hidden md:block"><ClientLogin /></div>
 
         <div
-          class="flex hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 md:hidden lg:hidden xl:hidden"
+          class="flex hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 sm:hidden md:hidden lg:hidden xl:hidden"
         >
           <span class="inline-block">
             <details class="dropdown dropdown-end dropdown-bottom">
               <summary class="list-none"
                 ><div class="tham tham-e-squeeze tham-w-5">
                   <div class="tham-box">
-                    <div class="tham-inner bg-zinc-700 dark:bg-zinc-300"></div>
+                    <div class="tham-inner  bg-zinc-700 dark:bg-zinc-300"></div>
                   </div>
                 </div></summary
               >
@@ -190,9 +161,7 @@ const currentPath = pathname.slice(1)
                 class="menu dropdown-content z-[1] mt-5 w-52 rounded-box bg-base-100 p-2 shadow dark:bg-zinc-100"
               >
                 <li>
-                  <a
-                    href="/services"
-                    data-astro-prefetch
+                  <a href="/services"
                     class={currentPath === 'process/' ? 'active' : ''}
                   >
                     <span
@@ -201,44 +170,19 @@ const currentPath = pathname.slice(1)
                     >
                   </a>
                   <ul>
-                    <li>
-                      <a
-                        href="/services/brand-design"
-                        data-astro-prefetch
-                        class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                        >Brand Design</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/services/app-development"
-                        data-astro-prefetch
-                        class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                        >App Development</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/services/digital-marketing"
-                        data-astro-prefetch
-                        class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                        >Digital Marketing</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/services/infrastructure-design"
-                        data-astro-prefetch
-                        class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900"
-                        >Infrastructure Design</a
-                      >
-                    </li>
+                    <li><a href="/services/brand-design"
+                      class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900">Brand Design</a></li>
+                      <li><a href="/services/app-development"
+                        class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900">App Development</a></li>
+                    <li><a href="/services/digital-marketing"
+                      class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900">Digital Marketing</a></li>
+                    <li><a href="/services/infrastructure-design"
+                      class="hover:tex-zinc-500 inline-block text-zinc-100 dark:text-zinc-900">Infrastructure Design</a></li>
                   </ul>
                 </li>
                 <li>
                   <a
                     href="/showcase"
-                    data-astro-prefetch
                     class={currentPath === 'showcase/' ? 'active' : ''}
                   >
                     <span
@@ -250,7 +194,6 @@ const currentPath = pathname.slice(1)
                 <li>
                   <a
                     href="/blog"
-                    data-astro-prefetch
                     class={currentPath === 'blog/' ? 'active' : ''}
                   >
                     <span
@@ -262,7 +205,6 @@ const currentPath = pathname.slice(1)
                 <li>
                   <a
                     href="/contact"
-                    data-astro-prefetch
                     class={currentPath === 'contact/' ? 'active' : ''}
                   >
                     <span
@@ -270,19 +212,6 @@ const currentPath = pathname.slice(1)
                       >Contact</span
                     >
                   </a>
-                </li>
-                <li>
-                  <button
-                    onclick="my_modal_2.showModal()"
-                    class={buttonVariants({ variant: 'clientHeader' })}
-                    ><Image
-                      src={logo}
-                      alt="PRI5M Logo"
-                      id="site-logo"
-                      class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
-                    />
-                    Client Login
-                  </button>
                 </li>
               </ul>
             </details>
@@ -294,6 +223,7 @@ const currentPath = pathname.slice(1)
 </header>
 
 <style>
+
   #nav li {
     float: left;
   }

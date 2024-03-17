@@ -5,7 +5,6 @@ import { buttonVariants } from '@/components/ui/button'
 import { Image } from 'astro:assets'
 import logo from '../assets/prism-logo.svg'
 import misty from '../assets/misty.webp'
-import dashboard from '../assets/dashboard.webp'
 import '../assets/fontawesome/css/all.min.css'
 ---
 
@@ -15,7 +14,7 @@ import '../assets/fontawesome/css/all.min.css'
 >
   <div class="fade-bg -mt-20">
     <section
-      class="gap-6pb-40 container grid items-center pt-20 pb-[100px] "
+      class="gap-6pb-40 container grid items-center pt-40 max-[600px]:pt-20"
     >
       <div class="pb-40 pt-20">
         <div class="flex flex-col items-center gap-2 text-center">
@@ -60,40 +59,23 @@ import '../assets/fontawesome/css/all.min.css'
     </section>
   </div>
 
-  <section id="browser" class="container">
-    
-    <div class="mockup-browser border dark:bg-base-300/20 text-zinc-500 -mt-[160px] rounded-xl shadow-2xl">
-      <div class="mockup-browser-toolbar">
-        <div class="input">mistyrobotics.com</div>
-      </div>
-      <div class="flex justify-center">
-        <Image src={dashboard} alt="Misty Robotics" />
-      </div>
-    </div>
-  </div>
-  </section>
-
   <section id="strategy" class="container mb-40">
-    <div class="md:pt-44" id="solution">
+    <div class="pt-32 md:pt-44" id="solution">
       <div class="mx-auto max-w-6xl">
         <div
           class="animate-fade-up flex-row-reverse items-center justify-between space-y-12 text-zinc-800 animate-delay-300 animate-duration-[800ms] md:flex md:gap-3 lg:gap-5 lg:space-y-0"
         >
           <div class="relative ml-auto h-full md:w-1/2">
-            <div class="mockup-code">
-              <pre><code></code></pre> 
-              <pre class="text-warning"><code>from app.models.Post import Post</code></pre> 
-              <pre class="text-warning"><code>from masonite.request import Reques</code></pre> 
-              <pre class="text-warning"><code>from masonite.views import Vie</code></pre> 
-              <pre class="text-warning"><code>...</code></pre> 
-              <pre><code></code></pre> 
-              <pre><code>def single(self, view: View, request: Request):</code></pre> 
-              <pre><code>post = Post.find(request.param('id'))</code></pre> 
-              <pre><code></code></pre> 
-              <pre class="text-success"><code> return view.render('single', ('post': post))</code></pre>
-              <pre><code></code></pre> 
+            <div class="mockup-browser border dark:bg-base-300">
+              <div class="mockup-browser-toolbar">
+                <div class="input">www.mistyrobotics.com</div>
+              </div>
+              <div class="flex justify-center">
+                <Image src={misty} alt="Misty Robotics" />
+              </div>
             </div>
           </div>
+
           <div class="md:w-1/2 lg:w-[40%]">
             <h2
               class="animate-fade text-3xl font-medium text-zinc-900 animate-delay-500 animate-duration-1000 dark:text-white md:text-4xl lg:text-5xl"
@@ -115,33 +97,33 @@ import '../assets/fontawesome/css/all.min.css'
                 <ul>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Healthcare
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Finance
                   </li>
                   
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Education
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Legal
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Real Estate
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Robotics
                   </li>
                 </ul>
@@ -149,32 +131,32 @@ import '../assets/fontawesome/css/all.min.css'
               <div>
                 <ul><li>
                   <i
-                    class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                    class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                   ></i> Technology
                 </li>
                 <li>
                   <i
-                    class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                    class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                   ></i> Manufacturing
                 </li>
                 <li>
                   <i
-                    class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                    class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                   ></i> Non-Profit
                 </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Health & Wellness
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Food & Beverage
                   </li>
                   <li>
                     <i
-                      class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
+                      class="fa-solid fa-arrow-right mr-2 text-black dark:text-white"
                     ></i> Entertainment
                   </li>
                 </ul>
@@ -464,12 +446,8 @@ import '../assets/fontawesome/css/all.min.css'
     );
   }
   
-#industry-list .fa-caret-right {
+#industry-list .fa-arrow-right {
   font-size: 7pt;
   vertical-align: middle;
-}
-
-.mockup-browser .mockup-browser-toolbar .input {
-  background-color:rgba(0,0,0,0.1) !important;
 }
 </style>
