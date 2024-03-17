@@ -309,21 +309,4 @@ const currentPath = pathname.slice(1)
 </style>
 
 <script>
-  var scrollPosition = window.scrollY
-  var navBG = document.getElementsByClassName('navigation')[0]
-  window.addEventListener('scroll', function () {
-    scrollPosition = window.scrollY
-
-    if (scrollPosition >= 100) {
-      navBG.classList.add('nav-bg')
-    } else {
-      navBG.classList.remove('nav-bg')
-    }
-  })
-
-  const tham = document.querySelector('.tham')
-
-  tham.addEventListener('click', () => {
-    tham.classList.toggle('tham-active')
-  })
 </script>
