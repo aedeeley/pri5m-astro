@@ -271,6 +271,19 @@ const currentPath = pathname.slice(1)
                     >
                   </a>
                 </li>
+                <li>
+                  <button
+                    onclick="my_modal_2.showModal()"
+                    class={buttonVariants({ variant: 'clientHeader' })}
+                    ><Image
+                      src={logo}
+                      alt="PRI5M Logo"
+                      id="site-logo"
+                      class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
+                    />
+                    Client Login
+                  </button>
+                </li>
               </ul>
             </details>
           </span>
@@ -309,4 +322,21 @@ const currentPath = pathname.slice(1)
 </style>
 
 <script>
+  var scrollPosition = window.scrollY
+  var navBG = document.getElementsByClassName('navigation')[0]
+  window.addEventListener('scroll', function () {
+    scrollPosition = window.scrollY
+
+    if (scrollPosition >= 100) {
+      navBG.classList.add('nav-bg')
+    } else {
+      navBG.classList.remove('nav-bg')
+    }
+  })
+
+  const tham = document.querySelector('.tham')
+
+  tham.addEventListener('click', () => {
+    tham.classList.toggle('tham-active')
+  })
 </script>
