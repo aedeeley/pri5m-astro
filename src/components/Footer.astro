@@ -1,22 +1,81 @@
+---
+import { Image } from 'astro:assets'
+import logo from '../assets/prism-logo.svg'
+---
+
 <footer
-  class="border-t border-neutral-100 py-6 dark:border-neutral-800 md:px-8 md:py-0"
+  class="footer bg-zinc-100 py-20 text-base leading-7 text-base-content dark:bg-zinc-800"
 >
-  <div
-    class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row"
-  ><div class="align-left">
-    <p
-      class="text-center text-sm leading-loose text-muted-foreground md:text-left"
-    >
-      Made with ❤
+  <div class="container grid grid-flow-col">
+    <nav class="hidden grid-flow-row gap-2 lg:grid">
+      <h6 class="footer-title text-sm font-normal tracking-wide">Services</h6>
+      <a href="/services/branding-design" class="link-hover link"
+        >Branding Design</a
+      >
+      <a href="/services/app-development" class="link-hover link"
+        >App Development</a
+      >
+      <a href="/services/digital-marketing" class="link-hover link"
+        >Digital Marketing</a
+      >
+      <a href="/services/infrastructure-design" class="link-hover link"
+        >Infrastructure Design</a
+      >
+    </nav>
+    <nav class="hidden grid-flow-row gap-2 lg:grid">
+      <h6 class="footer-title text-sm font-normal tracking-wide">Company</h6>
+      <a href="/showcase" class="link-hover link">Showcase</a>
+      <a href="/about-us" class="link-hover link">About us</a>
+      <a href="/blog" class="link-hover link">Blog</a>
+      <a href="/contact" class="link-hover link">Contact</a>
+    </nav>
+    <nav class="hidden grid-flow-row gap-2 lg:grid">
+      <h6 class="footer-title text-sm font-normal tracking-wide">Legal</h6>
+      <a href="/" class="link-hover link">Terms of use</a>
+      <a href="/" class="link-hover link">Privacy policy</a>
+      <a href="/" class="link-hover link">Cookie policy</a>
+    </nav>
+    <form>
+      <h6 class="footer-title text-sm font-normal tracking-wide">Newsletter</h6>
+      <fieldset class="form-control w-80">
+        <label class="label" for="span">
+          <span class="label-text">Enter your email address</span>
+        </label>
+        <div class="join">
+          <input
+            type="text"
+            placeholder="username@site.com"
+            class="input join-item border-none bg-zinc-200 dark:bg-zinc-900"
+          />
+          <button
+            class="btn btn-primary join-item border-none bg-zinc-300 hover:bg-zinc-400 dark:bg-zinc-300 dark:hover:bg-zinc-100"
+            >Subscribe</button
+          >
+        </div>
+      </fieldset>
+    </form>
   </div>
-      <div class="align-right text-sm text-zinc-800 dark:text-zinc-500">
-        <a
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-          target="_blank"
-          class="text-zinc-200">CC BY-NC-SA 4.0</a
-        >
-         2023 © PRI5M.COM
-      </div>
-    </p>
+</footer>
+<footer
+  class="footer items-center bg-zinc-100 p-4 text-neutral-content dark:bg-zinc-800"
+>
+  <div class="container footer items-center p-4 text-neutral-content">
+    <aside class="grid-flow-col items-center">
+      <p>
+        <Image
+          src={logo}
+          alt="PRI5M Logo"
+          id="site-logo"
+          class="float-left mr-3 max-w-[24px]"
+        /> pri5m.com &copy; 2024. All rights reserved.
+      </p>
+    </aside>
+    <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        target="_blank"
+        class="text-zinc-200">CC BY-NC-SA 4.0</a
+      >
+    </nav>
   </div>
 </footer>
