@@ -4,25 +4,23 @@ import logo from '../assets/prism-logo.svg'
 import { buttonVariants } from '@/components/ui/button'
 ---
 
-<div class="hidden md:block">
-  <button
-    onclick="my_modal_2.showModal()"
-    class={buttonVariants({ variant: 'clientHeader' })}
-    ><Image
-      src={logo}
-      alt="PRI5M Logo"
-      id="site-logo" loading="eager"
-      class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
-    />
-    Client Login
-  </button>   
-</div>
+<button
+  onclick="my_modal_2.showModal()"
+  class={buttonVariants({ variant: 'clientHeader' })}
+  ><Image
+    src={logo}
+    alt="PRI5M Logo"
+    id="site-logo"
+    class="mr-2 max-w-[22px] group-hover:animate-wiggle-more"
+  />
+  Client Login
+</button>
 <dialog id="my_modal_2" class="mx-w-1 modal">
   <div class="modal-box bg-white dark:bg-zinc-900">
     <div class="mb-10 text-xl font-bold">
       <Image
         src={logo}
-        alt="PRI5M Logo" loading="eager"
+        alt="PRI5M Logo"
         class="float-left mr-3 mt-[3px] max-w-[30px]"
       /> Client Login
     </div>
@@ -54,7 +52,7 @@ import { buttonVariants } from '@/components/ui/button'
           placeholder="Email Address"
           name="email"
           required=""
-          class="astro-UWNXE3I2 w-full animate-fade rounded-md bg-zinc-200 px-4 py-3 outline-none animate-delay-200 placeholder:text-zinc-400 focus:ring-4 dark:bg-zinc-800"
+          class="astro-UWNXE3I2 w-full animate-fade rounded-md bg-zinc-200 px-4 py-3 outline-none animate-delay-200 placeholder:text-gray-400 focus:ring-4 dark:bg-zinc-800"
         />
       </div>
       <div class="astro-UWNXE3I2 mb-5">
@@ -62,7 +60,7 @@ import { buttonVariants } from '@/components/ui/button'
           type="password"
           placeholder="Password"
           required=""
-          class="astro-UWNXE3I2 animate-delay-400 w-full animate-fade rounded-md bg-zinc-200 px-4 py-3 outline-none placeholder:text-zinc-400 focus:ring-4 dark:bg-zinc-800"
+          class="astro-UWNXE3I2 animate-delay-400 w-full animate-fade rounded-md bg-zinc-200 px-4 py-3 outline-none placeholder:text-gray-400 focus:ring-4 dark:bg-zinc-800"
           name="name"
         />
       </div>
@@ -73,10 +71,10 @@ import { buttonVariants } from '@/components/ui/button'
       </button>
       <div id="result" class="astro-UWNXE3I2 mt-3 text-center"></div>
     </form>
-
-    <div class="text-center">
-      <a href="/" class="text-sm">Forgot Password?</a>
-    </div>
+    
+<div class="text-center">
+  <a href="#" class="text-sm">Forgot Password?</a>
+</div>
   </div>
   <form method="dialog" class="modal-backdrop">
     <button>close</button>
