@@ -1,11 +1,16 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import Tech from '@/components/Tech.astro'
+import Tech2 from '@/components/Tech2.astro'
 import { buttonVariants } from '@/components/ui/button'
 import { Image } from 'astro:assets'
 import logo from '../assets/prism-logo.svg'
 import misty from '../assets/misty.webp'
 import dashboard from '../assets/dashboard.webp'
+import goldleafold from '../assets/goldleafmd-old.webp'
+import goldleafnew from '../assets/goldleafmd-new.webp'
+import hero from '../assets/hero-test.mp4'
+import herocover from '../assets/hero-test.webp'
 import '../assets/fontawesome/css/all.min.css'
 ---
 
@@ -13,351 +18,48 @@ import '../assets/fontawesome/css/all.min.css'
   title="PRI5M | technology + marketing solutions for the modern era"
   description="technology + marketing solutions for the modern era"
 >
-  <div class="fade-bg -mt-20">
-    <section class="gap-6pb-40 container grid items-center pb-[100px] pt-20">
-      <div class="pb-40 pt-20">
-        <div class="flex flex-col items-center gap-2 text-center">
+  <div class="-mt-20">
+    <section class="gap-6pb-40 container grid items-center pt-20">
+      <div class="pb-20 pt-20">
           <h1
-            class="max-w-[900px] animate-fade text-4xl font-medium animate-delay-200 md:text-6xl"
+            class="max-w-[900px] pt-20 animate-fade text-4xl font-semibold animate-delay-200 md:text-6xl"
           >
-            <span class="fade">Prism</span> delivers unforgettable marketing experiences
+            <span class="fade font-semibold">Prism</span> delivers unforgettable marketing experiences
           </h1>
-          <p
-            class="text-md mb-10 mt-5 max-w-[700px] animate-fade text-center text-muted-foreground animate-delay-300 md:text-lg"
-          >
-            Transform your online presence with our web development expertise at
-            Prism. We specialize in creating memorable, effective, and
-            results-driven websites that elevate your brand to new heights in
-            the digital era.
-          </p>
-        </div>
-        <div
-          class="flex animate-fade-down justify-center gap-4 animate-delay-200 animate-duration-[800ms] max-[600px]:flex-col"
-        >
-          <a
-            href="#strategy"
-            rel="noreferrer"
-            class={buttonVariants({ variant: 'outlineintro' })}
-            ><Image
-              src={logo}
-              alt="PRI5M Logo"
-              id="site-logo"
-              loading="eager"
-              class="mr-3 max-w-[24px]"
-            />
-            Learn more
-          </a>
-          <a
-            href="/showcase"
-            rel="noreferrer"
-            class={buttonVariants({ variant: 'fadeintro' })}
-          >
-            See project showcase
-          </a>
-        </div>
       </div>
     </section>
   </div>
 
-  <section id="browser" class="container">
-    <div
-      class="mockup-browser -mt-[160px] rounded-xl border text-zinc-500 shadow-2xl dark:bg-base-300/20"
-    >
-      <div class="mockup-browser-toolbar">
-        <div class="input">mistyrobotics.com</div>
-      </div>
-      <div class="flex justify-center">
-        <Image src={dashboard} alt="Misty Robotics" loading="eager" />
-      </div>
+  <section class="hero-video container max-w-7xl px-0 transition-all">
+    <video class="bg-white" poster={herocover} autoplay="" loop="" muted="" playsinline="">
+      <source src={hero} type="video/mp4">
+      </video>
+  </section>
+
+  <section class="container my-40 bg-[url('../assets/global.webp')] bg-contain bg-no-repeat bg-center">
+  <div class="max-w-[850px] mx-auto py-40 text-center text-zinc-600 text-4xl font-medium">
+<p class="mb-10">Transform your online presence with our web development expertise at Prism. </p>
+<p>We specialize in creating memorable, effective, and results-driven websites that elevate your brand to new heights in the digital era.</p>
     </div>
   </section>
 
-  <section id="strategy" class="container my-40">
-   <div class="grid grid-cols-1 md:grid-cols-2 space-x-20">
+<section class="container-mx mb-20 bg-zinc-100 py-40 text-center">
+  <div class="container max-w-[800px]">
+  <h2 class="mb-20 text-zinc-900 text-3xl">Technologies we work with</h2>
+    <div role="tablist" class="tabs tabs-bordered">
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xl pb-10 px-5" aria-label="Frontend" />
+      <div role="tabpanel" class="tab-content py-20 text-left"><Tech/></div>
     
-    <div>
-      <h2
-      class="animate-fade text-3xl font-medium text-zinc-900 animate-delay-500 animate-duration-1000 dark:text-white md:text-4xl lg:text-5xl"
-    >
-      <span class="fade">Prism</span> has industry expertise
-    </h2>
-    <p
-      class="mb-5 mt-5 animate-fade text-zinc-800 animate-delay-500 animate-duration-1000 dark:text-zinc-300"
-    >
-      Prism has over <em>2 decades</em> of marketing experience under our belt.
-      We've had the opportunity to provide for over 500 clients in a variety
-      of industries, including:
-    </p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 text-md leading-7 text-slate-400">
-      <div><ul>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mb-1 mr-2 text-black dark:text-white"
-          ></i> Healthcare
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Finance
-        </li>
-
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Education
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Legal
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Real Estate
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Robotics
-        </li>
-      </ul></div>
-      <div><ul>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Technology
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Manufacturing
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Non-Profit
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Health & Wellness
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Food & Beverage
-        </li>
-        <li>
-          <i
-            class="fa-solid fa-caret-right mb-1 mr-2 text-black dark:text-white"
-          ></i> Entertainment
-        </li>
-      </ul></div>
-    </div>
-    <div class="mt-10">
-      <a
-        href="#technology"
-        rel="noreferrer"
-        class={buttonVariants({ variant: 'harsh' })}
-        ><i
-          class="fa-solid fa-microchip mr-3 text-xl text-zinc-200 group-hover:animate-wiggle-more dark:text-zinc-800"
-        ></i>
-        Check out our tech
-      </a>
-    </div>
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xl pb-10 px-5" aria-label="Backend" checked />
+      <div role="tabpanel" class="tab-content py-20 text-left"> <Tech2/></div>
     
-    </div>
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xl pb-10 px-5" aria-label="Mobile" />
+      <div role="tabpanel" class="tab-content py-20 text-left"> <Tech/></div>
     
-    <div>
-      <div role="tablist" class="tabs tabs-lifted">
-        <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Tab 1" />
-        <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 1</div>
-      
-        <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Tab 2" checked />
-        <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 2</div>
-      
-        <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Tab 3" />
-        <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 3</div>
-      </div>
-
-    </div>
-   </div>
-  </section>
-
-  <section id="clients" class="container my-40">
-    <div class="grid grid-flow-col cols-1 sm:cols-2 md:cols-3 gap-5 text-sm text-slate-400 leading-8">
-      <div>
-        <ul>
-          <li>Suarez Housing</li>
-          <li>Continental Promotion Group</li>
-          <li>Gorilla Trades</li>
-          <li>Catalina Marketing</li>
-          <li>Bay Cities Bank</li>
-          <li>Integrity Nutraceuticals</li>
-          <li>Handex Consulting and Remediation</li>
-          <li>Inland Homes</li>
-          <li>KForce</li>
-          <li>Organic &amp; Natural Health Association</li>
-      </div>
-      <div>
-        <ul>
-          
-
-          <li> MegaFood</li>
-          <li>Members Trust Company</li>
-          <li>Renew Life</li>
-          <li>Enzymotec</li>
-          <li>BioQuest</li>
-          <li>AVI-SPL</li>
-          <li>Projector People</li>
-          <li>Fast-Fix Jewelry & Watch Repair</li>
-          <li>Florida Hospital Zephyrhills</li>
-          <li>Fabien Cousteau's Mission 31</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li></li>Microsoft</li>
-          <li>Design Interiors Furniture Showrooms</li>
-          <li>Edward White Hospital</li>
-          <li>HR Products</li>
-          <li>NAUI</li>
-          <li>Little Cayman/Brac Reef Beach Resorts</li>
-          <li>Advanced Bio Technologies</li>
-          <li>Houghton Mifflin Harcourt</li>
-          <li>Bet America</li>
-          <li>Pitch Publicity</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-<section class="container-mx mb-20 bg-zinc-100 md:pb-40">
-  <div
-    class="mx-auto max-w-7xl items-center px-8 py-40 md:px-12 lg:px-16 xl:px-24"
-    id="technology"
-  >
-    <div class="max-w-lg">
-      <h2
-        class="text-3xl font-medium tracking-tighter text-zinc-900 lg:text-5xl"
-      >
-        <span class="fade">Prism</span> has a diverse technology stack
-      </h2>
-      <p
-        class="mb-5 mt-5 animate-fade text-zinc-800 animate-delay-500 animate-duration-1000"
-      >
-        We're here to tackle your technology and marketing problems. To do so,
-        we're always up to date on the latest + greatest technologies, so you
-        can focus on what you need to!
-      </p>
-    </div>
-    <div>
-      <Tech />
-    </div>
-  </div>
-  <div
-    class="mx-auto max-w-7xl bg-gradient-to-r from-indigo-950 to-indigo-900 lg:rounded-3xl"
-  >
-    <div class="mx-auto max-w-7xl px-8 py-24 md:px-12 lg:px-16 xl:px-24">
-      <div class="grid grid-cols-1 items-end gap-12 md:grid-cols-2 lg:gap-24">
-        <div>
-          <h2 class="inline-flex items-center text-white">
-            <span class="text-base font-medium tracking-tight">CTA</span>
-          </h2>
-          <h2
-            class="mt-6 text-3xl font-semibold tracking-tighter text-white lg:text-5xl"
-          >
-            Ready to get started with Spaziobianco?
-          </h2>
-          <p class="mt-5 text-zinc-400">
-            Receive dividends bull investment mutual funds rise federal funds
-            strategy substantially treasury municipal public index funds.
-          </p>
-          <div class="mt-10 flex flex-col gap-6 lg:flex-row">
-            <a
-              class="inline-flex w-auto items-center justify-center gap-3 rounded-full bg-blue-500 px-6 py-3.5 font-medium text-white ring-2 ring-transparent duration-200 hover:bg-blue-600 focus:outline-none focus:ring-blue-500 focus:ring-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 active:bg-blue-800 active:text-white lg:px-8"
-              href="/system/overview"
-            >
-              Explor all pages
-            </a>
-            <a
-              href="/"
-              class="group inline-flex items-center justify-center text-white hover:text-blue-500"
-            >
-              See libraries
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="ml-3 h-4 w-4 transform transition duration-500 ease-in-out group-hover:translate-x-2"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="mt-12 lg:mt-0">
-          <div class="mx-auto">
-            <div class="grid grid-cols-2 gap-6 gap-y-14 lg:gap-12">
-              <article>
-                <div class="space-y-3">
-                  <div>
-                    <p class="font-semibold text-white">
-                      Supervised deployments
-                    </p>
-                  </div>
-                  <p class="text-sm text-zinc-400">
-                    Debt bills lucrative capitalization municipal bonds
-                    government.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <div class="space-y-3">
-                  <div>
-                    <p class="font-semibold text-white">Conect your SaaS</p>
-                  </div>
-                  <p class="text-sm text-zinc-400">
-                    Debt bills lucrative capitalization municipal bonds
-                    government.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <div class="space-y-3">
-                  <div>
-                    <p class="font-semibold text-white">Databse ready</p>
-                  </div>
-                  <p class="text-sm text-zinc-400">
-                    Debt bills lucrative capitalization municipal bonds
-                    government.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <div class="space-y-3">
-                  <div>
-                    <p class="font-semibold text-white">Deployments</p>
-                  </div>
-                  <p class="text-sm text-zinc-400">
-                    Debt bills lucrative capitalization municipal bonds
-                    government.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xl pb-10 px-5" aria-label="CMS" />
+      <div role="tabpanel" class="tab-content py-20 text-left"> <Tech2/></div>
+  </div></div>
 </section>
-
 <section id="FAQ" class="container mb-20">
   <div class="mb-20 flex flex-col gap-12 md:my-32 lg:flex-row">
     <div class="text-center lg:w-5/12 lg:pl-12 lg:text-left">
@@ -505,3 +207,20 @@ import '../assets/fontawesome/css/all.min.css'
     background-color: rgba(0, 0, 0, 0.1) !important;
   }
 </style>
+
+
+<script>
+  var scrollPosition = window.scrollY
+  var navBG = document.getElementsByClassName('hero-video')[0]
+  window.addEventListener('scroll', function () {
+    scrollPosition = window.scrollY
+
+    if (scrollPosition >= 100) {
+      navBG.classList.add('max-w-[100%]')
+    } else {
+      navBG.classList.remove('max-w-[100%]')
+    }
+  })
+
+</script>
+

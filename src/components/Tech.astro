@@ -8,24 +8,17 @@ import tailwind from '../assets/brands/tailwind.svg'
 import laravel from '../assets/brands/laravel.svg'
 import strapi from '../assets/brands/strapi.svg'
 import graphql from '../assets/brands/graphql.svg'
-import nginx from '../assets/brands/nginx.svg'
-import vite from '../assets/brands/vite.svg'
-import shopify from '../assets/brands/shopify.svg'
-import wordpress from '../assets/brands/wordpress.svg'
 ---
 
 <ul
   id="tech"
   role="list"
-  class="grid auto-rows-fr grid-cols-2 gap-7 md:grid-cols-3 lg:grid-cols-4"
+  class="grid auto-rows-fr grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center"
 >
   <li>
     <div>
       <span><Image src={nodejs} alt="" /></span>
       <p class="mt-5 font-semibold text-zinc-900">Node.js</p>
-    </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      Open-source, cross-platform JavaScript runtime environment.
     </div>
   </li>
   <li>
@@ -33,18 +26,11 @@ import wordpress from '../assets/brands/wordpress.svg'
       <span><Image src={elixir} alt="" /></span>
       <p class="mt-5 font-semibold text-zinc-900">Elixir</p>
     </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      A functional, concurrent, high-level general-purpose programming language.
-    </div>
   </li>
   <li>
     <div>
       <span><Image src={react} alt="" /></span>
       <p class="mt-5 font-semibold text-zinc-900">React</p>
-    </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      Open-source front-end JavaScript library for building user interfaces
-      based on components.
     </div>
   </li>
   <li>
@@ -52,19 +38,11 @@ import wordpress from '../assets/brands/wordpress.svg'
       <span><Image src={vue} alt="" /></span>
       <p class="mt-5 font-semibold text-zinc-900">Vue</p>
     </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      Open-source front end JavaScript library for building user interfaces and
-      single-page applications.
-    </div>
   </li>
   <li>
     <div>
       <span><Image src={tailwind} alt="" /></span>
       <p class="mt-5 font-semibold text-zinc-900">Tailwind</p>
-    </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      A CSS framework packed with "utility" classes that can be used to style
-      each element by mixing and matching.
     </div>
   </li>
   <li>
@@ -72,19 +50,11 @@ import wordpress from '../assets/brands/wordpress.svg'
       <span><Image src={laravel} alt="" /></span>
       <p class="mt-5 font-semibold text-zinc-900">Laravel</p>
     </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      Open-source PHP web framework following the MVC pattern and based on
-      Symfony.
-    </div>
   </li>
   <li>
     <div>
       <span><Image src={strapi} alt="" /></span>
       <p class="mt-5 font-semibold text-zinc-900">Strapi</p>
-    </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      A headless CMS used to develop websites, mobile applications, eCommerce
-      sites, and APIs.
     </div>
   </li>
   <li>
@@ -92,56 +62,16 @@ import wordpress from '../assets/brands/wordpress.svg'
       <span> <Image src={graphql} alt="" /></span>
       <p class="mt-5 font-semibold text-zinc-900">GraphQL</p>
     </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      Open-source data query and manipulation language for APIs and a query
-      runtime engine.
-    </div>
-  </li>
-  <li>
-    <div>
-      <span> <Image src={nginx} alt="" /></span>
-      <p class="mt-5 font-semibold text-zinc-900">Nginx</p>
-    </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      A web server that can also be used as a reverse proxy, load balancer, mail
-      proxy and HTTP cache.
-    </div>
-  </li>
-  <li>
-    <div>
-      <span> <Image src={vite} alt="" /></span>
-      <p class="mt-5 font-semibold text-zinc-900">Vite</p>
-    </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      A build tool that aims to provide a faster and leaner development
-      experience for modern web projects.
-    </div>
-  </li>
-  <li>
-    <div>
-      <span> <Image src={shopify} alt="" /></span>
-      <p class="mt-5 font-semibold text-zinc-900">Shopify</p>
-    </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      A complete commerce platform that lets anyone start, manage, and grow a
-      business.
-    </div>
-  </li>
-  <li>
-    <div>
-      <span> <Image src={wordpress} alt="" /></span>
-      <p class="mt-5 font-semibold text-zinc-900">Wordpress</p>
-    </div>
-    <div class="mt-2 text-sm text-zinc-500">
-      From blogging to e-commerce to business and portfolio websites, WordPress
-      is a versatile CMS.
-    </div>
   </li>
 </ul>
 
 <style>
+  #tech li {
+    margin-bottom:40px;
+  }
   #tech li span img {
     height: 30px;
     width: auto;
-  }
+  margin:0 auto;
+}
 </style>

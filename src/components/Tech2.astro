@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets'
+import nginx from '../assets/brands/nginx.svg'
+import vite from '../assets/brands/vite.svg'
+import shopify from '../assets/brands/shopify.svg'
+import wordpress from '../assets/brands/wordpress.svg'
+---
+
+<ul
+  id="tech"
+  role="list"
+  class="grid auto-rows-fr grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center"
+>
+  <li>
+    <div>
+      <span> <Image src={nginx} alt="" /></span>
+      <p class="mt-5 font-semibold text-zinc-900">Nginx</p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <span> <Image src={vite} alt="" /></span>
+      <p class="mt-5 font-semibold text-zinc-900">Vite</p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <span> <Image src={shopify} alt="" /></span>
+      <p class="mt-5 font-semibold text-zinc-900">Shopify</p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <span> <Image src={wordpress} alt="" /></span>
+      <p class="mt-5 font-semibold text-zinc-900">Wordpress</p>
+    </div>
+  </li>
+</ul>
+
+<style>
+  #tech li {
+    margin-bottom:40px;
+  }
+  #tech li span img {
+    height: 30px;
+    width: auto;
+    margin:0 auto;
+  }
+</style>
