@@ -21,7 +21,9 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@jop-software/astro-cookieconsent": "^3.0.0",
     "@material-tailwind/react": "^2.1.7",
+    "@preline/overlay": "^2.1.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@vercel/speed-insights": "^1.0.10",
     "astro": "^4.0.0",
@@ -39,7 +41,8 @@
     "tailwind-merge": "^2.0.0",
     "tailwindcss": "^3.3.5",
     "tailwindcss-animate": "^1.0.7",
-    "tailwindcss-animated": "^1.0.1"
+    "tailwindcss-animated": "^1.0.1",
+    "vanilla-cookieconsent": "^3.0.1"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

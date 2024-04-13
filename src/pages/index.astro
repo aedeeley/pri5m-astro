@@ -198,5 +198,19 @@ import '../assets/fontawesome/css/all.min.css'
     }
   })
 
+  import { reset, run } from 'vanilla-cookieconsent';
+	import { config } from 'src/components/CookiesConsentConfig';
+
+	const resetBtn = document.getElementById("reset-btn");
+	const toggleThemeBtb = document.getElementById("toggle-theme-btn");
+
+	resetBtn?.addEventListener('click', () => {
+		reset(true);
+		run(config);
+	});
+
+	toggleThemeBtb?.addEventListener('click', () => {
+		document.body.classList.toggle('cc--elegant-black');
+	});
 </script>
 

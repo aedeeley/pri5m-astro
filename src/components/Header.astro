@@ -4,7 +4,7 @@ import ThemeToggle from '@/components/ThemeToggle.astro'
 import Social from '@/components/Social.astro'
 import ClientLogin from '@/components/ClientLogin.astro'
 import { Image } from 'astro:assets'
-import logo from '../assets/prism-logo.svg'
+import logo from '@/assets/prism-logo.svg'
 const pathname = new URL(Astro.request.url).pathname
 const currentPath = pathname.slice(1)
 ---
@@ -133,7 +133,7 @@ const currentPath = pathname.slice(1)
             <span
               class="float-left inline-block duration-300 hover:text-blue-500"
               >Showcase </span
-            ><span class="float-left bg-blue-500 rounded h-2 w-2 ml-1"></span>
+            ><span class="float-left bg-blue-500 rounded h-2 w-2 ml-1 animate-pulse"></span>
           </a>
         </li>
         <li
