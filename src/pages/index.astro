@@ -14,6 +14,7 @@ import herocover from '../assets/hero-test.webp'
 import '../assets/fontawesome/css/all.min.css'
 ---
 
+
 <BaseLayout
   title="PRI5M | technology + marketing solutions for the modern era"
   description="technology + marketing solutions for the modern era"
@@ -45,20 +46,38 @@ import '../assets/fontawesome/css/all.min.css'
 
 <section class="container-mx mb-20 bg-zinc-100 py-40 text-center">
   <div class="container max-w-[800px]">
-  <h2 class="mb-20 text-zinc-900 text-3xl">Technologies we work with</h2>
-    <div role="tablist" class="tabs tabs-bordered">
-      <input type="radio" name="my_tabs_1" role="tab" class="tab text-lg pb-10 px-3" aria-label="Frontend" />
-      <div role="tabpanel" class="tab-content py-20 text-left"><Tech/></div>
+    <h2 class="mb-20 text-zinc-900 text-3xl" data-astro-cid-j7pv25f6="">Technologies we work with</h2>
     
-      <input type="radio" name="my_tabs_1" role="tab" class="tab text-lg pb-10 px-3" aria-label="Backend" checked />
-      <div role="tabpanel" class="tab-content py-20 text-left"> <Tech2/></div>
+      <nav class="justify-center flex space-x-1 mb-20" aria-label="Tabs" role="tablist">
+        <button type="button" class="hs-tab-active:font-semibold hs-tab:border-zinc-200 hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-3 inline-flex items-center gap-x-2 border-b-2 border-transparent text-lg whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500 active" id="tabs-with-underline-item-1" data-hs-tab="#tabs-with-underline-1" aria-controls="tabs-with-underline-1" role="tab">
+          Frontend
+        </button>
+        <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-3 inline-flex items-center gap-x-2 border-b-2 border-transparent text-lg whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500" id="tabs-with-underline-item-2" data-hs-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2" role="tab">
+          Backend
+        </button>
+        <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-3 inline-flex items-center gap-x-2 border-b-2 border-transparent text-lg whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500" id="tabs-with-underline-item-3" data-hs-tab="#tabs-with-underline-3" aria-controls="tabs-with-underline-3" role="tab">
+          Mobile
+        </button>
+        <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-3 inline-flex items-center gap-x-2 border-b-2 border-transparent text-lg whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500" id="tabs-with-underline-item-4" data-hs-tab="#tabs-with-underline-4" aria-controls="tabs-with-underline-4" role="tab">
+          CMS
+        </button>
+      </nav>
     
-      <input type="radio" name="my_tabs_1" role="tab" class="tab text-lg pb-10 px-3" aria-label="Mobile" />
-      <div role="tabpanel" class="tab-content py-20 text-left"> <Tech/></div>
-    
-      <input type="radio" name="my_tabs_1" role="tab" class="tab text-lg pb-10 px-3" aria-label="CMS" />
-      <div role="tabpanel" class="tab-content py-20 text-left"> <Tech2/></div>
-  </div></div>
+    <div class="mt-3">
+      <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1">
+        <Tech/>
+      </div>
+      <div id="tabs-with-underline-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-2">
+        <Tech2/>
+      </div>
+      <div id="tabs-with-underline-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-3">
+        <Tech/>
+      </div>
+      <div id="tabs-with-underline-4" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-4">
+        <Tech2/>
+      </div>
+    </div>
+  </div>
 </section>
 <section id="FAQ" class="container mb-20">
   <div class="mb-20 flex flex-col gap-12 md:my-32 lg:flex-row">
@@ -76,113 +95,67 @@ import '../assets/fontawesome/css/all.min.css'
 
     <div
       class="divide-y divide-gray-200 border-gray-200 dark:divide-gray-800 dark:border-gray-800 lg:w-7/12"
-    >
-      <div
-        class="collapse collapse-arrow rounded-none rounded-b-lg rounded-t-lg bg-zinc-100 dark:bg-zinc-800"
-      >
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div
-          class="collapse-title text-lg font-bold text-zinc-800 dark:text-zinc-200"
-        >
-          Click to open this one and close others
-        </div>
-        <div
-          class="collapse-content text-sm font-normal leading-6 text-zinc-500 dark:text-zinc-400"
-        >
-          <p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              dignissim augue nec neque ultrices, a dignissim nisi elementum.
-              Suspendisse quis eleifend augue. Proin sit amet egestas lorem.
-              Praesent id convallis lacus, sit amet placerat erat. Vivamus
-              blandit nunc nec finibus eleifend. Proin eget euismod quam, vel
-              tincidunt elit. Aliquam dolor risus, gravida in congue vel,
-              suscipit quis eros. Ut vitae convallis erat, a volutpat nulla.
+    ><div class="hs-accordion-group">
+      <div class="hs-accordion active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700" id="hs-bordered-heading-one">
+        <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-bordered-collapse-one">
+          <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="M12 5v14"></path>
+          </svg>
+          <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+          </svg>
+          Accordion #1
+        </button>
+        <div id="hs-basic-bordered-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-bordered-heading-one">
+          <div class="pb-4 px-5">
+            <p class="text-gray-800 dark:text-gray-200">
+              <em>This is the third item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
             </p>
-          </p>
-        </div>
-        <div
-          class="collapse collapse-arrow rounded-none bg-zinc-100 dark:bg-zinc-800"
-        >
-          <input type="radio" name="my-accordion-2" />
-          <div
-            class="collapse-title text-lg font-bold text-zinc-800 dark:text-zinc-200"
-          >
-            Click to open this one and close others
-          </div>
-          <div
-            class="collapse-content text-sm font-normal leading-6 text-zinc-500 dark:text-zinc-400"
-          >
-            <p>
-              <p>
-                Curabitur ac scelerisque metus. Pellentesque ut ipsum volutpat
-                erat placerat pretium nec ut urna. Donec ut lacus lacus.
-                Suspendisse a nisi non risus porttitor varius et vitae lectus.
-                Aenean rhoncus lectus velit, sit amet efficitur mauris viverra
-                non. Pellentesque interdum arcu risus, nec suscipit tellus
-                scelerisque nec. Sed iaculis aliquet ante consectetur posuere.
-              </p>
-            </p>
-          </div>
-          <div
-            class="collapse collapse-arrow rounded-none bg-zinc-100 dark:bg-zinc-800"
-          >
-            <input type="radio" name="my-accordion-2" />
-            <div
-              class="collapse-title text-lg font-bold text-zinc-800 dark:text-zinc-200"
-            >
-              Click to open this one and close others
-            </div>
-            <div
-              class="collapse-content text-sm font-normal leading-6 text-zinc-500 dark:text-zinc-400"
-            >
-              <p class="mb-5 pt-5">
-                Donec in congue nisi. Nam a risus a sapien scelerisque
-                consectetur. Integer viverra tincidunt enim, ultricies efficitur
-                ex venenatis ut. Proin sollicitudin lorem quis lectus rutrum
-                porttitor. Etiam nec dui in mi ornare condimentum. Nulla a augue
-                volutpat, scelerisque turpis eget, bibendum est. Nulla vulputate
-                mi posuere, laoreet metus vitae, varius nunc. Nullam lacinia
-                turpis ut justo pretium, a tempor tellus semper. In hac
-                habitasse platea dictumst.
-              </p>
-
-              <p class="pb-5">
-                Fusce non sollicitudin est, ac porttitor libero. Pellentesque et
-                dolor pharetra, vestibulum turpis quis, sodales odio. Nullam
-                suscipit turpis quis cursus ullamcorper. Proin metus lorem,
-                lobortis a fermentum quis, pretium vitae orci. Curabitur
-                vulputate velit nec efficitur consectetur. Etiam et sapien
-                magna. Morbi nec ultricies tellus. Suspendisse potenti.
-              </p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-zinc-100 dark:bg-zinc-800">
-            <input type="radio" name="my-accordion-2" />
-            <div
-              class="collapse-title text-lg font-bold text-zinc-800 dark:text-zinc-200"
-            >
-              Click to open this one and close others
-            </div>
-            <div
-              class="collapse-content text-sm font-normal leading-6 text-zinc-500 dark:text-zinc-400"
-            >
-              <p class="pb-5 pt-5">
-                Nunc nisl est, porta vitae ullamcorper dapibus, imperdiet vitae
-                est. Donec posuere ipsum eu rhoncus molestie. Aenean dictum ante
-                non vulputate sodales. Morbi malesuada, lorem nec rutrum
-                ultricies, massa magna dapibus ipsum, vitae gravida augue metus
-                nec magna. Aenean faucibus pretium diam at vehicula. Nunc id
-                libero porta, convallis augue sit amet, ornare diam. Suspendisse
-                potenti. Phasellus pretium arcu in erat fringilla, a hendrerit
-                quam tempus. Curabitur malesuada nisi sed urna rutrum, id
-                sagittis turpis cursus. In egestas lacus eu justo porta pretium.
-                Pellentesque eleifend maximus gravida.
-              </p>
-            </div>
           </div>
         </div>
       </div>
+    
+      <div class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700" id="hs-bordered-heading-two">
+        <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-bordered-collapse-two">
+          <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="M12 5v14"></path>
+          </svg>
+          <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+          </svg>
+          Accordion #2
+        </button>
+        <div id="hs-basic-bordered-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-bordered-heading-two">
+          <div class="pb-4 px-5">
+            <p class="text-gray-800 dark:text-gray-200">
+              <em>This is the second item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700" id="hs-bordered-heading-three">
+        <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-bordered-collapse-three">
+          <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="M12 5v14"></path>
+          </svg>
+          <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+          </svg>
+          Accordion #3
+        </button>
+        <div id="hs-basic-bordered-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-bordered-heading-three">
+          <div class="pb-4 px-5">
+            <p class="text-gray-800 dark:text-gray-200">
+              <em>This is the first item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </section>
