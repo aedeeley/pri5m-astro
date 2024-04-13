@@ -48,14 +48,14 @@ export const config: CookieConsentConfig = {
     translations: {
       en: {
         consentModal: {
-          title: "We uses cookies to enhance your experience",
+          title: "🍪 We use cookies!",
           description:
-            'We use cookies and similar technologies to enhance your browsing experience, analyze our website traffic, and personalize content.  <br /><br />By clicking "Accept", you consent to the use of cookies on this site. However, you can change your cookie settings at any time by clicking "Cookie Settings" in the footer of the website.',
+            'We use cookies and similar technologies to enhance your browsing experience, analyze our website traffic, and personalize content.  <br /><br />By clicking "Accept", you consent to the use of cookies on this site.',
           acceptAllBtn: 'Accept all',
           acceptNecessaryBtn: 'Reject all',
           showPreferencesBtn: 'Manage preferences',
           footer:
-            '<a href="#link">Privacy Policy</a>\n<a href="#link">Terms and conditions</a>',
+            '<a href="/privacy-policy">Privacy Policy</a>\n<a href="/terms-and-conditions">Terms and conditions</a>',
         },
         preferencesModal: {
           title: 'Consent Preferences Center',
