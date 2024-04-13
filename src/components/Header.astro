@@ -38,7 +38,7 @@ const currentPath = pathname.slice(1)
           </a>
         </li>
         <li
-          class="hidden items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 md:flex"
+          class="hidden items-center space-x-2 transition ease-in-out active:opacity-80 md:flex"
         >
           <details class="dropdown mt-1">
             <summary
@@ -131,9 +131,9 @@ const currentPath = pathname.slice(1)
             class={currentPath === 'showcase/' ? 'active' : ''}
           >
             <span
-              class="float-left inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
+              class="float-left inline-block duration-300 hover:text-blue-500"
               >Showcase </span
-            ><span class="float-left bg-purple-900 text-purple-300 rounded h-4 w-6 text-[5pt] flex items-center justify-center ml-1">NEW</span>
+            ><span class="float-left bg-blue-500 rounded h-2 w-2 ml-1"></span>
           </a>
         </li>
         <li
@@ -145,13 +145,13 @@ const currentPath = pathname.slice(1)
             class={currentPath === 'blog/' ? 'active' : ''}
           >
             <span
-              class="inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
+              class="inline-block duration-300 hover:text-blue-500"
               >Blog</span
             >
           </a>
         </li>
         <li
-          class="hidden items-center space-x-2 transition ease-in-out hover:text-zinc-500 active:opacity-80 dark:hover:text-zinc-300 md:flex"
+          class="hidden items-center space-x-2 transition ease-in-out hover:text-blue-500 active:opacity-80 md:flex"
         >
           <a
             href="/contact"
@@ -159,7 +159,7 @@ const currentPath = pathname.slice(1)
             class={currentPath === 'contact/' ? 'active' : ''}
           >
             <span
-              class="inline-block duration-300 hover:text-zinc-900 dark:hover:text-zinc-400"
+              class="inline-block duration-300 hover:text-zinc-900blue"
               >Contact</span
             >
           </a>
@@ -283,24 +283,14 @@ const currentPath = pathname.slice(1)
     float: left;
   }
   .active {
-    color: #363636;
+    color: #4082F1;
     font-weight: bold;
-  }
-  html.dark .active {
-    color: #fff !important;
   }
 
   .navigation {
     transition: background-color 0.35s ease-in-out;
   }
 
-  .nav-border {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
-
-  .dark .nav-border {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-  }
   .navigation summary::marker {
     font-size: 0pt;
   }
