@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 import logo from '../assets/prism-logo.svg'
+import CookieConsent from '@/components/CookieConsent.astro';
 ---
 
 <footer
@@ -52,8 +53,9 @@ import logo from '../assets/prism-logo.svg'
             >Subscribe</button
           >
         </div>
-      </fieldset>
+      </fieldset><div class="mt-10"><CookieConsent/></div>
     </form>
+    
   </div>
 </footer>
 <footer

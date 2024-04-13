@@ -4,7 +4,7 @@ export const config: CookieConsentConfig = {
   guiOptions: {
     consentModal: {
       layout: 'box inline',
-      position: 'bottom left',
+      position: 'bottom right',
     },
     preferencesModal: {
       layout: 'box',
@@ -50,7 +50,7 @@ export const config: CookieConsentConfig = {
         consentModal: {
           title: "🍪 We use cookies!",
           description:
-            'We use cookies and similar technologies to enhance your browsing experience, analyze our website traffic, and personalize content.  <br /><br />By clicking "Accept", you consent to the use of cookies on this site.',
+            'We use cookies and similar technologies to enhance your browsing experience, analyze our website traffic, and personalize content.  <br /><br />By clicking "Accept all", you consent to the use of cookies on this site.',
           acceptAllBtn: 'Accept all',
           acceptNecessaryBtn: 'Reject all',
           showPreferencesBtn: 'Manage preferences',
