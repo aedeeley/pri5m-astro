@@ -13,13 +13,15 @@ import whitneyhero from '../../assets/whitney-hero.webp'
   >
     <div class="container mx-auto flex flex-col gap-14 text-lg lg:flex-row">
       <div class="flex shrink-0 lg:w-1/2">
-        <div class="my-auto text-white pt-40 md:pt-0">
+        <div class="my-auto pt-40 text-white md:pt-0">
           <div
-            class="mb-4 inline-block rounded-2xl bg-white text-violet-400 px-2 py-0.5 text-xs font-medium uppercase"
+            class="mb-4 inline-block rounded-2xl bg-white px-2 py-0.5 text-xs font-medium uppercase text-violet-400"
           >
             Services
           </div>
-          <h1 class="mb-4 text-5xl font-semibold">Memorable, impactful + timeless Branding</h1>
+          <h1 class="mb-4 text-5xl font-semibold">
+            Memorable, impactful + timeless Branding
+          </h1>
           <div class="mb-8 text-xl font-light">
             Our branding services elevate your brand's identity, guiding you
             through strategic design processes that capture your essence and
@@ -29,7 +31,7 @@ import whitneyhero from '../../assets/whitney-hero.webp'
           <div>
             <a
               href="https://app.visible.vc/create-account"
-              class="bg-white rounded px-5 py-3 text-base text-zinc-700 hover:bg-zinc-100 transition-all"
+              class="rounded bg-white px-5 py-3 text-base text-zinc-700 transition-all hover:bg-zinc-100"
             >
               Continue
             </a>
@@ -37,29 +39,49 @@ import whitneyhero from '../../assets/whitney-hero.webp'
         </div>
       </div>
       <div class="flex justify-end lg:w-1/2">
-        <div class="relative block bg-white p-[60px] text-center w-full">
+        <div class="relative block w-full bg-white p-[60px] text-center">
           <h2 class="mx-auto text-[24pt] font-semibold text-zinc-800">
             Request for proposal
           </h2>
-          <div class="block pt-10"><div class="space-y-5">
-            <div class="relative">
-              <input type="email" class="peer py-3 px-4 ps-5 block w-full bg-gray-100 border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Name">
+          <div class="block pt-10">
+            <div class="space-y-5">
+              <div class="relative">
+                <input
+                  type="email"
+                  class="peer block w-full rounded-lg border-transparent bg-gray-100 px-4 py-3 ps-5 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50"
+                  placeholder="Name"
+                />
+              </div>
+
+              <div class="relative">
+                <input
+                  type="email"
+                  class="peer block w-full rounded-lg border-transparent bg-gray-100 px-4 py-3 ps-5 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50"
+                  placeholder="Email"
+                />
+              </div>
+
+              <div class="relative">
+                <input
+                  type="text"
+                  class="peer block w-full rounded-lg border-transparent bg-gray-100 px-4 py-3 ps-5 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50"
+                  placeholder="Phone"
+                />
+              </div>
+              <div class="max-w-full space-y-3">
+                <textarea
+                  class="block min-w-full rounded-lg border-transparent bg-gray-100 px-4 py-3 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50"
+                  rows="3"
+                  placeholder="This is a textarea placeholder"></textarea>
+              </div>
+              <div class="relative">
+                <input
+                  type="submit"
+                  class="peer block w-full rounded-lg border-transparent bg-blue-500 px-4 py-3 ps-5 text-sm text-white focus:border-blue-500 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50"
+                  placeholder="Phone"
+                />
+              </div>
             </div>
-          
-            <div class="relative">
-              <input type="email" class="peer py-3 px-4 ps-5 block w-full bg-gray-100 border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Email">
-            </div>
-          
-            <div class="relative">
-              <input type="text" class="peer py-3 px-4 ps-5 block w-full bg-gray-100 border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Phone">
-            </div>
-            <div class="max-w-full space-y-3">
-              <textarea class="py-3 px-4 block min-w-full bg-gray-100 border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" rows="3" placeholder="This is a textarea placeholder"></textarea>
-            </div>
-            <div class="relative">
-              <input type="submit" class="peer py-3 px-4 ps-5 block w-full bg-blue-500 text-white border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Phone">
-            </div>
-          </div>
           </div>
         </div>
       </div>

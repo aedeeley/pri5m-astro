@@ -1,10 +1,7 @@
 {
   "name": "@aedeeley/pri5m.com-astro",
-  "version": "0.11",
   "description": "ASTRO / TAILWIND / RADIX UI / SHADCN",
-  "author": {
-    "name": "PRI5M"
-  },
+  "author": "PRI5M",
   "license": "MIT",
   "scripts": {
     "build": "astro build",
@@ -14,6 +11,7 @@
     "start": "astro dev"
   },
   "dependencies": {
+    "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/preact": "^3.1.1",
     "@astrojs/react": "^3.0.6",
     "@astrojs/tailwind": "^5.0.2",
@@ -25,7 +23,9 @@
     "@material-tailwind/react": "^2.1.7",
     "@preline/overlay": "^2.1.0",
     "@radix-ui/react-slot": "^1.0.2",
+    "@types/alpinejs": "^3.13.10",
     "@vercel/speed-insights": "^1.0.10",
+    "alpinejs": "^3.13.10",
     "astro": "^4.0.0",
     "babel-plugin-macros": "^3.1.0",
     "class-variance-authority": "^0.7.0",
@@ -55,5 +55,7 @@
     "prettier-plugin-tailwindcss": "^0.5.7",
     "typescript": "^5.3.2"
   },
-  "packageManager": "pnpm@8.12.1"
+  "packageManager": "pnpm@8.12.1",
+  "version": "1.0.0",
+  "main": "index.js"
 }
